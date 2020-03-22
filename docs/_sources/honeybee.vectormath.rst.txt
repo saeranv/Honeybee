@@ -1,0 +1,17 @@
+honeybee.vectormath package
+===========================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.vectormath.euclid
+
+Module contents
+---------------
+
+.. automodule:: honeybee.vectormath
+    :members:
+    :undoc-members:
+    :show-inheritance:

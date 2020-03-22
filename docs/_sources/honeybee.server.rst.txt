@@ -1,0 +1,18 @@
+honeybee.server package
+=======================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.server.client
+   honeybee.server.mpupload
+
+Module contents
+---------------
+
+.. automodule:: honeybee.server
+    :members:
+    :undoc-members:
+    :show-inheritance:

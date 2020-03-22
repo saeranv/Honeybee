@@ -1,0 +1,7 @@
+honeybee.radiance.mixture.mixpict module
+========================================
+
+.. automodule:: honeybee.radiance.mixture.mixpict
+    :members:
+    :undoc-members:
+    :show-inheritance:

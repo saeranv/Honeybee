@@ -1,0 +1,7 @@
+honeybee.windowgroup module
+===========================
+
+.. automodule:: honeybee.windowgroup
+    :members:
+    :undoc-members:
+    :show-inheritance:

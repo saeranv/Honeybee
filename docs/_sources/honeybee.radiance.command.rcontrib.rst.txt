@@ -1,0 +1,7 @@
+honeybee.radiance.command.rcontrib module
+=========================================
+
+.. automodule:: honeybee.radiance.command.rcontrib
+    :members:
+    :undoc-members:
+    :show-inheritance:

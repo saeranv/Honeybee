@@ -1,0 +1,7 @@
+honeybee.radiance.parameters.raBmp module
+=========================================
+
+.. automodule:: honeybee.radiance.parameters.raBmp
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+honeybee.radiance.command.getbbox module
+========================================
+
+.. automodule:: honeybee.radiance.command.getbbox
+    :members:
+    :undoc-members:
+    :show-inheritance:

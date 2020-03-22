@@ -1,0 +1,7 @@
+honeybee.hbobject module
+========================
+
+.. automodule:: honeybee.hbobject
+    :members:
+    :undoc-members:
+    :show-inheritance:

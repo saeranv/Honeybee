@@ -1,0 +1,36 @@
+honeybee.radiance.parameters package
+====================================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.parameters.dctimestep
+   honeybee.radiance.parameters.falsecolor
+   honeybee.radiance.parameters.genBsdf
+   honeybee.radiance.parameters.gendaylit
+   honeybee.radiance.parameters.gendaymtx
+   honeybee.radiance.parameters.gensky
+   honeybee.radiance.parameters.mkpmap
+   honeybee.radiance.parameters.oconv
+   honeybee.radiance.parameters.pcomb
+   honeybee.radiance.parameters.raBmp
+   honeybee.radiance.parameters.raTiff
+   honeybee.radiance.parameters.rcalc
+   honeybee.radiance.parameters.rcollate
+   honeybee.radiance.parameters.rcontrib
+   honeybee.radiance.parameters.rfluxmtx
+   honeybee.radiance.parameters.rmtxop
+   honeybee.radiance.parameters.rpict
+   honeybee.radiance.parameters.rtrace
+   honeybee.radiance.parameters.vwrays
+   honeybee.radiance.parameters.xform
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.parameters
+    :members:
+    :undoc-members:
+    :show-inheritance:

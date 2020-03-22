@@ -1,0 +1,7 @@
+honeybee.radiance.material.prism2 module
+========================================
+
+.. automodule:: honeybee.radiance.material.prism2
+    :members:
+    :undoc-members:
+    :show-inheritance:

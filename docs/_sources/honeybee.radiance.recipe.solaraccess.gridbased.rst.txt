@@ -1,0 +1,7 @@
+honeybee.radiance.recipe.solaraccess.gridbased module
+=====================================================
+
+.. automodule:: honeybee.radiance.recipe.solaraccess.gridbased
+    :members:
+    :undoc-members:
+    :show-inheritance:

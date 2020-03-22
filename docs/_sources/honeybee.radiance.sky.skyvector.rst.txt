@@ -1,0 +1,7 @@
+honeybee.radiance.sky.skyvector module
+======================================
+
+.. automodule:: honeybee.radiance.sky.skyvector
+    :members:
+    :undoc-members:
+    :show-inheritance:

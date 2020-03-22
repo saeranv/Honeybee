@@ -1,0 +1,7 @@
+honeybee.exception module
+=========================
+
+.. automodule:: honeybee.exception
+    :members:
+    :undoc-members:
+    :show-inheritance:

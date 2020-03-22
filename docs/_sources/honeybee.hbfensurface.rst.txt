@@ -1,0 +1,7 @@
+honeybee.hbfensurface module
+============================
+
+.. automodule:: honeybee.hbfensurface
+    :members:
+    :undoc-members:
+    :show-inheritance:

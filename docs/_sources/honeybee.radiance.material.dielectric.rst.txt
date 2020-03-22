@@ -1,0 +1,7 @@
+honeybee.radiance.material.dielectric module
+============================================
+
+.. automodule:: honeybee.radiance.material.dielectric
+    :members:
+    :undoc-members:
+    :show-inheritance:

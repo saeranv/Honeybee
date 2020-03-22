@@ -1,0 +1,7 @@
+honeybee.radiance.geometry.instance module
+==========================================
+
+.. automodule:: honeybee.radiance.geometry.instance
+    :members:
+    :undoc-members:
+    :show-inheritance:

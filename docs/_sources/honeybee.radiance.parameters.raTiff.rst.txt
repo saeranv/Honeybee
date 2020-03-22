@@ -1,0 +1,7 @@
+honeybee.radiance.parameters.raTiff module
+==========================================
+
+.. automodule:: honeybee.radiance.parameters.raTiff
+    :members:
+    :undoc-members:
+    :show-inheritance:

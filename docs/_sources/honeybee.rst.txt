@@ -1,0 +1,43 @@
+honeybee package
+================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    honeybee.energyplus
+    honeybee.radiance
+    honeybee.server
+    honeybee.vectormath
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.config
+   honeybee.dataoperation
+   honeybee.exception
+   honeybee.futil
+   honeybee.geometryoperation
+   honeybee.hbdynamicsurface
+   honeybee.hbfensurface
+   honeybee.hbobject
+   honeybee.hbshadesurface
+   honeybee.hbsurface
+   honeybee.hbzone
+   honeybee.room
+   honeybee.schedule
+   honeybee.surfaceproperties
+   honeybee.surfacetype
+   honeybee.utilcol
+   honeybee.windowgroup
+
+Module contents
+---------------
+
+.. automodule:: honeybee
+    :members:
+    :undoc-members:
+    :show-inheritance:

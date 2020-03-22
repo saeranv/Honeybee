@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>honeybee.radiance.recipe.recipedcutil module &#8212; honeybee 0.1.16 documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="honeybee.radiance.recipe.recipeutil module" href="honeybee.radiance.recipe.recipeutil.html" />
+    <link rel="prev" title="honeybee.radiance.recipe.parameters module" href="honeybee.radiance.recipe.parameters.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          honeybee</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.1.16</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="honeybee.html">honeybee package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="honeybee.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="honeybee.energyplus.html">honeybee.energyplus package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.energyplus.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.energyplus.filemanager.html">honeybee.energyplus.filemanager module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.energyplus.geometryrules.html">honeybee.energyplus.geometryrules module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.energyplus.html#module-honeybee.energyplus">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="honeybee.radiance.html">honeybee.radiance package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="honeybee.radiance.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.command.html">honeybee.radiance.command package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.command.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.pyRad.html">honeybee.radiance.command.pyRad package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.command.pyRad.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.command.pyRad.pyRadLib.html">honeybee.radiance.command.pyRad.pyRadLib package</a><ul>
+<li class="toctree-l10"><a class="reference internal" href="honeybee.radiance.command.pyRad.pyRadLib.html#submodules">Submodules</a><ul>
+<li class="toctree-l11"><a class="reference internal" href="honeybee.radiance.command.pyRad.pyRadLib.pyrad_proc.html">honeybee.radiance.command.pyRad.pyRadLib.pyrad_proc module</a></li>
+</ul>
+</li>
+<li class="toctree-l10"><a class="reference internal" href="honeybee.radiance.command.pyRad.pyRadLib.html#module-honeybee.radiance.command.pyRad.pyRadLib">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.command.pyRad.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.command.pyRad.objview.html">honeybee.radiance.command.pyRad.objview module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.command.pyRad.html#module-honeybee.radiance.command.pyRad">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.command.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.dctimestep.html">honeybee.radiance.command.dctimestep module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.epw2wea.html">honeybee.radiance.command.epw2wea module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.falsecolor.html">honeybee.radiance.command.falsecolor module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.genBSDF.html">honeybee.radiance.command.genBSDF module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.gendaylit.html">honeybee.radiance.command.gendaylit module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.gendaymtx.html">honeybee.radiance.command.gendaymtx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.gensky.html">honeybee.radiance.command.gensky module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.genskyvec.html">honeybee.radiance.command.genskyvec module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.getbbox.html">honeybee.radiance.command.getbbox module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.getinfo.html">honeybee.radiance.command.getinfo module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.mkpmap.html">honeybee.radiance.command.mkpmap module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.objview.html">honeybee.radiance.command.objview module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.oconv.html">honeybee.radiance.command.oconv module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.pcomb.html">honeybee.radiance.command.pcomb module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.raBmp.html">honeybee.radiance.command.raBmp module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.raTiff.html">honeybee.radiance.command.raTiff module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.rcalc.html">honeybee.radiance.command.rcalc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.rcollate.html">honeybee.radiance.command.rcollate module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.rcontrib.html">honeybee.radiance.command.rcontrib module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.rfluxmtx.html">honeybee.radiance.command.rfluxmtx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.rmtxop.html">honeybee.radiance.command.rmtxop module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.rpict.html">honeybee.radiance.command.rpict module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.rtrace.html">honeybee.radiance.command.rtrace module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.vwrays.html">honeybee.radiance.command.vwrays module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.command.xform.html">honeybee.radiance.command.xform module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.command.html#module-honeybee.radiance.command">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.geometry.html">honeybee.radiance.geometry package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.geometry.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.bubble.html">honeybee.radiance.geometry.bubble module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.cone.html">honeybee.radiance.geometry.cone module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.cup.html">honeybee.radiance.geometry.cup module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.cylinder.html">honeybee.radiance.geometry.cylinder module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.geometrybase.html">honeybee.radiance.geometry.geometrybase module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.instance.html">honeybee.radiance.geometry.instance module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.mesh.html">honeybee.radiance.geometry.mesh module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.polygon.html">honeybee.radiance.geometry.polygon module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.ring.html">honeybee.radiance.geometry.ring module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.source.html">honeybee.radiance.geometry.source module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.sphere.html">honeybee.radiance.geometry.sphere module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.geometry.tube.html">honeybee.radiance.geometry.tube module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.geometry.html#module-honeybee.radiance.geometry">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.material.html">honeybee.radiance.material package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.material.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.antimatter.html">honeybee.radiance.material.antimatter module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.ashik2.html">honeybee.radiance.material.ashik2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.brtdfunc.html">honeybee.radiance.material.brtdfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.bsdf.html">honeybee.radiance.material.bsdf module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.dielectric.html">honeybee.radiance.material.dielectric module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.glass.html">honeybee.radiance.material.glass module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.glow.html">honeybee.radiance.material.glow module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.illum.html">honeybee.radiance.material.illum module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.interface.html">honeybee.radiance.material.interface module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.light.html">honeybee.radiance.material.light module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.materialbase.html">honeybee.radiance.material.materialbase module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.metal.html">honeybee.radiance.material.metal module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.metal2.html">honeybee.radiance.material.metal2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.metdata.html">honeybee.radiance.material.metdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.metfunc.html">honeybee.radiance.material.metfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.mirror.html">honeybee.radiance.material.mirror module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.mist.html">honeybee.radiance.material.mist module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.plasdata.html">honeybee.radiance.material.plasdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.plasfunc.html">honeybee.radiance.material.plasfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.plastic.html">honeybee.radiance.material.plastic module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.plastic2.html">honeybee.radiance.material.plastic2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.prism1.html">honeybee.radiance.material.prism1 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.prism2.html">honeybee.radiance.material.prism2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.spotlight.html">honeybee.radiance.material.spotlight module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.trans.html">honeybee.radiance.material.trans module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.trans2.html">honeybee.radiance.material.trans2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.transdata.html">honeybee.radiance.material.transdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.material.transfunc.html">honeybee.radiance.material.transfunc module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.material.html#module-honeybee.radiance.material">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.mixture.html">honeybee.radiance.mixture package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.mixture.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.mixture.mixdata.html">honeybee.radiance.mixture.mixdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.mixture.mixfunc.html">honeybee.radiance.mixture.mixfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.mixture.mixpict.html">honeybee.radiance.mixture.mixpict module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.mixture.mixtext.html">honeybee.radiance.mixture.mixtext module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.mixture.mixturebase.html">honeybee.radiance.mixture.mixturebase module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.mixture.html#module-honeybee.radiance.mixture">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.parameters.html">honeybee.radiance.parameters package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.parameters.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.dctimestep.html">honeybee.radiance.parameters.dctimestep module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.falsecolor.html">honeybee.radiance.parameters.falsecolor module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.genBsdf.html">honeybee.radiance.parameters.genBsdf module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.gendaylit.html">honeybee.radiance.parameters.gendaylit module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.gendaymtx.html">honeybee.radiance.parameters.gendaymtx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.gensky.html">honeybee.radiance.parameters.gensky module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.mkpmap.html">honeybee.radiance.parameters.mkpmap module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.oconv.html">honeybee.radiance.parameters.oconv module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.pcomb.html">honeybee.radiance.parameters.pcomb module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.raBmp.html">honeybee.radiance.parameters.raBmp module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.raTiff.html">honeybee.radiance.parameters.raTiff module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.rcalc.html">honeybee.radiance.parameters.rcalc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.rcollate.html">honeybee.radiance.parameters.rcollate module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.rcontrib.html">honeybee.radiance.parameters.rcontrib module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.rfluxmtx.html">honeybee.radiance.parameters.rfluxmtx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.rmtxop.html">honeybee.radiance.parameters.rmtxop module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.rpict.html">honeybee.radiance.parameters.rpict module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.rtrace.html">honeybee.radiance.parameters.rtrace module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.vwrays.html">honeybee.radiance.parameters.vwrays module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.parameters.xform.html">honeybee.radiance.parameters.xform module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.parameters.html#module-honeybee.radiance.parameters">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.pattern.html">honeybee.radiance.pattern package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.pattern.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.pattern.brightdata.html">honeybee.radiance.pattern.brightdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.pattern.brightfunc.html">honeybee.radiance.pattern.brightfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.pattern.brighttext.html">honeybee.radiance.pattern.brighttext module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.pattern.colordata.html">honeybee.radiance.pattern.colordata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.pattern.colorfunc.html">honeybee.radiance.pattern.colorfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.pattern.colorpict.html">honeybee.radiance.pattern.colorpict module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.pattern.colortext.html">honeybee.radiance.pattern.colortext module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.pattern.patternbase.html">honeybee.radiance.pattern.patternbase module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.pattern.html#module-honeybee.radiance.pattern">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5 current"><a class="reference internal" href="honeybee.radiance.recipe.html">honeybee.radiance.recipe package</a><ul class="current">
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.recipe.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.annual.html">honeybee.radiance.recipe.annual package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.annual.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.annual.gridbased.html">honeybee.radiance.recipe.annual.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.annual.html#module-honeybee.radiance.recipe.annual">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.daylightcoeff.html">honeybee.radiance.recipe.daylightcoeff package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.daylightcoeff.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.daylightcoeff.gridbased.html">honeybee.radiance.recipe.daylightcoeff.gridbased module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.daylightcoeff.imagebased.html">honeybee.radiance.recipe.daylightcoeff.imagebased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.daylightcoeff.html#module-honeybee.radiance.recipe.daylightcoeff">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.daylightfactor.html">honeybee.radiance.recipe.daylightfactor package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.daylightfactor.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.daylightfactor.gridbased.html">honeybee.radiance.recipe.daylightfactor.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.daylightfactor.html#module-honeybee.radiance.recipe.daylightfactor">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.directreflection.html">honeybee.radiance.recipe.directreflection package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.directreflection.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.directreflection.gridbased.html">honeybee.radiance.recipe.directreflection.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.directreflection.html#module-honeybee.radiance.recipe.directreflection">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.fivephase.html">honeybee.radiance.recipe.fivephase package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.fivephase.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.fivephase.gridbased.html">honeybee.radiance.recipe.fivephase.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.fivephase.html#module-honeybee.radiance.recipe.fivephase">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.pointintime.html">honeybee.radiance.recipe.pointintime package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.pointintime.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.pointintime.gridbased.html">honeybee.radiance.recipe.pointintime.gridbased module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.pointintime.imagebased.html">honeybee.radiance.recipe.pointintime.imagebased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.pointintime.html#module-honeybee.radiance.recipe.pointintime">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.radiation.html">honeybee.radiance.recipe.radiation package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.radiation.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.radiation.gridbased.html">honeybee.radiance.recipe.radiation.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.radiation.html#module-honeybee.radiance.recipe.radiation">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.solaraccess.html">honeybee.radiance.recipe.solaraccess package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.solaraccess.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.solaraccess.gridbased.html">honeybee.radiance.recipe.solaraccess.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.solaraccess.html#module-honeybee.radiance.recipe.solaraccess">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.threephase.html">honeybee.radiance.recipe.threephase package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.threephase.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="honeybee.radiance.recipe.threephase.gridbased.html">honeybee.radiance.recipe.threephase.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="honeybee.radiance.recipe.threephase.html#module-honeybee.radiance.recipe.threephase">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6 current"><a class="reference internal" href="honeybee.radiance.recipe.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.id.html">honeybee.radiance.recipe.id module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.parameters.html">honeybee.radiance.recipe.parameters module</a></li>
+<li class="toctree-l7 current"><a class="current reference internal" href="#">honeybee.radiance.recipe.recipedcutil module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.recipeutil.html">honeybee.radiance.recipe.recipeutil module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.recipexphaseutil.html">honeybee.radiance.recipe.recipexphaseutil module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.recipe.html#module-honeybee.radiance.recipe">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.resultcollection.html">honeybee.radiance.resultcollection package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.resultcollection.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.resultcollection.database.html">honeybee.radiance.resultcollection.database module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.resultcollection.imagecollection.html">honeybee.radiance.resultcollection.imagecollection module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.resultcollection.pointintime.html">honeybee.radiance.resultcollection.pointintime module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.resultcollection.resultgrid.html">honeybee.radiance.resultcollection.resultgrid module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.resultcollection.timeseries.html">honeybee.radiance.resultcollection.timeseries module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.resultcollection.html#module-honeybee.radiance.resultcollection">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.sky.html">honeybee.radiance.sky package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.sky.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.sky.analemma.html">honeybee.radiance.sky.analemma module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.sky.certainIlluminance.html">honeybee.radiance.sky.certainIlluminance module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.sky.cie.html">honeybee.radiance.sky.cie module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.sky.climatebased.html">honeybee.radiance.sky.climatebased module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.sky.gendaylit.html">honeybee.radiance.sky.gendaylit module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.sky.skymatrix.html">honeybee.radiance.sky.skymatrix module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.sky.skyvector.html">honeybee.radiance.sky.skyvector module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.sky.sunmatrix.html">honeybee.radiance.sky.sunmatrix module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.sky.html#module-honeybee.radiance.sky">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.texture.html">honeybee.radiance.texture package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.texture.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.texture.texdata.html">honeybee.radiance.texture.texdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.texture.texfunc.html">honeybee.radiance.texture.texfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.texture.texturebase.html">honeybee.radiance.texture.texturebase module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.texture.html#module-honeybee.radiance.texture">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.radiance.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.analysisgrid.html">honeybee.radiance.analysisgrid module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.analysisgridlite.html">honeybee.radiance.analysisgridlite module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.analysispoint.html">honeybee.radiance.analysispoint module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.analysispointlite.html">honeybee.radiance.analysispointlite module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.datatype.html">honeybee.radiance.datatype module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.factory.html">honeybee.radiance.factory module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.primitive.html">honeybee.radiance.primitive module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.properties.html">honeybee.radiance.properties module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.radfile.html">honeybee.radiance.radfile module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.radparser.html">honeybee.radiance.radparser module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.scene.html">honeybee.radiance.scene module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.staticscene.html">honeybee.radiance.staticscene module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.view.html">honeybee.radiance.view module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.radiance.html#module-honeybee.radiance">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.server.html">honeybee.server package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.server.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.server.client.html">honeybee.server.client module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.server.mpupload.html">honeybee.server.mpupload module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.server.html#module-honeybee.server">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.vectormath.html">honeybee.vectormath package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.vectormath.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.vectormath.euclid.html">honeybee.vectormath.euclid module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.vectormath.html#module-honeybee.vectormath">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.config.html">honeybee.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.dataoperation.html">honeybee.dataoperation module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.exception.html">honeybee.exception module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.futil.html">honeybee.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.geometryoperation.html">honeybee.geometryoperation module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.hbdynamicsurface.html">honeybee.hbdynamicsurface module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.hbfensurface.html">honeybee.hbfensurface module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.hbobject.html">honeybee.hbobject module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.hbshadesurface.html">honeybee.hbshadesurface module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.hbsurface.html">honeybee.hbsurface module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.hbzone.html">honeybee.hbzone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.room.html">honeybee.room module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.schedule.html">honeybee.schedule module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.surfaceproperties.html">honeybee.surfaceproperties module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.surfacetype.html">honeybee.surfacetype module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.utilcol.html">honeybee.utilcol module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.windowgroup.html">honeybee.windowgroup module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee.html#module-honeybee">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="honeybee.html">honeybee package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="honeybee.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="honeybee.energyplus.html">honeybee.energyplus package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="honeybee.radiance.html">honeybee.radiance package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="honeybee.radiance.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.command.html">honeybee.radiance.command package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.geometry.html">honeybee.radiance.geometry package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.material.html">honeybee.radiance.material package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.mixture.html">honeybee.radiance.mixture package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.parameters.html">honeybee.radiance.parameters package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.pattern.html">honeybee.radiance.pattern package</a></li>
+<li class="toctree-l5 current"><a class="reference internal" href="honeybee.radiance.recipe.html">honeybee.radiance.recipe package</a><ul class="current">
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.recipe.html#subpackages">Subpackages</a></li>
+<li class="toctree-l6 current"><a class="reference internal" href="honeybee.radiance.recipe.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.id.html">honeybee.radiance.recipe.id module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.parameters.html">honeybee.radiance.recipe.parameters module</a></li>
+<li class="toctree-l7 current"><a class="current reference internal" href="#">honeybee.radiance.recipe.recipedcutil module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.recipeutil.html">honeybee.radiance.recipe.recipeutil module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.recipexphaseutil.html">honeybee.radiance.recipe.recipexphaseutil module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.recipe.html#module-honeybee.radiance.recipe">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.resultcollection.html">honeybee.radiance.resultcollection package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.sky.html">honeybee.radiance.sky package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.texture.html">honeybee.radiance.texture package</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.radiance.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.radiance.html#module-honeybee.radiance">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.server.html">honeybee.server package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.vectormath.html">honeybee.vectormath package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee.html#module-honeybee">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="honeybee.radiance.recipe.parameters.html" title="Previous Chapter: honeybee.radiance.recipe.parameters module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; honeybee.radi...</span>
+    </a>
+  </li>
+  <li>
+    <a href="honeybee.radiance.recipe.recipeutil.html" title="Next Chapter: honeybee.radiance.recipe.recipeutil module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">honeybee.radi... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/honeybee.radiance.recipe.recipedcutil.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="honeybee.html">honeybee package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="honeybee.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="honeybee.energyplus.html">honeybee.energyplus package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="honeybee.radiance.html">honeybee.radiance package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="honeybee.radiance.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.command.html">honeybee.radiance.command package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.geometry.html">honeybee.radiance.geometry package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.material.html">honeybee.radiance.material package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.mixture.html">honeybee.radiance.mixture package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.parameters.html">honeybee.radiance.parameters package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.pattern.html">honeybee.radiance.pattern package</a></li>
+<li class="toctree-l5 current"><a class="reference internal" href="honeybee.radiance.recipe.html">honeybee.radiance.recipe package</a><ul class="current">
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.recipe.html#subpackages">Subpackages</a></li>
+<li class="toctree-l6 current"><a class="reference internal" href="honeybee.radiance.recipe.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.id.html">honeybee.radiance.recipe.id module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.parameters.html">honeybee.radiance.recipe.parameters module</a></li>
+<li class="toctree-l7 current"><a class="current reference internal" href="#">honeybee.radiance.recipe.recipedcutil module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.recipeutil.html">honeybee.radiance.recipe.recipeutil module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="honeybee.radiance.recipe.recipexphaseutil.html">honeybee.radiance.recipe.recipexphaseutil module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="honeybee.radiance.recipe.html#module-honeybee.radiance.recipe">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.resultcollection.html">honeybee.radiance.resultcollection package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.sky.html">honeybee.radiance.sky package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee.radiance.texture.html">honeybee.radiance.texture package</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.radiance.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee.radiance.html#module-honeybee.radiance">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.server.html">honeybee.server package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee.vectormath.html">honeybee.vectormath package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee.html#module-honeybee">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="module-honeybee.radiance.recipe.recipedcutil">
+<span id="honeybee-radiance-recipe-recipedcutil-module"></span><h1>honeybee.radiance.recipe.recipedcutil module<a class="headerlink" href="#module-honeybee.radiance.recipe.recipedcutil" title="Permalink to this headline">¶</a></h1>
+<p>A collection of useful methods for daylight-coeff recipes.</p>
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.coeff_matrix_commands">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">coeff_matrix_commands</code><span class="sig-paren">(</span><em>output_name</em>, <em>receiver</em>, <em>rad_files</em>, <em>sender</em>, <em>points_file=None</em>, <em>number_of_points=None</em>, <em>rfluxmtx_parameters=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#coeff_matrix_commands"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.coeff_matrix_commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns radiance commands to create coefficient matrix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>output_name</strong> – Output file name.</li>
+<li><strong>receiver</strong> – A radiance file to indicate the receiver. In view matrix it will be the</li>
+<li><strong>group and in daylight matrix it will be the sky.</strong> (<em>window</em>) – </li>
+<li><strong>rad_files</strong> – A collection of Radiance files that should be included in the scene.</li>
+<li><strong>sender</strong> – A collection of files for senders if senders are radiance geometries
+such as window groups (Default: ‘-‘).</li>
+<li><strong>points_file</strong> – Path to point file which will be used instead of sender.</li>
+<li><strong>number_of_points</strong> – Number of points in points_file as an integer.</li>
+<li><strong>rfluxmtx_parameters</strong> – Radiance parameters for Rfluxmtx command using a
+RfluxmtxParameters instance (Default: None).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.create_reference_map_command">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">create_reference_map_command</code><span class="sig-paren">(</span><em>view</em>, <em>view_file</em>, <em>outputfolder</em>, <em>octree_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#create_reference_map_command"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.create_reference_map_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a reference map to conver illuminance to luminance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.final_matrix_addition">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">final_matrix_addition</code><span class="sig-paren">(</span><em>skymtx</em>, <em>skydirmtx</em>, <em>sunmtx</em>, <em>output</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#final_matrix_addition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.final_matrix_addition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add final sky, direct sky and sun matrix.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.final_matrix_addition_radiation">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">final_matrix_addition_radiation</code><span class="sig-paren">(</span><em>skydifmtx</em>, <em>sunmtx</em>, <em>output</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#final_matrix_addition_radiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.final_matrix_addition_radiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add final diffuse sky and sun matrix.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.get_commands_radiation_sky">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">get_commands_radiation_sky</code><span class="sig-paren">(</span><em>project_folder</em>, <em>sky_matrix</em>, <em>reuse=True</em>, <em>simplified=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#get_commands_radiation_sky"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.get_commands_radiation_sky" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list of commands to generate the skies.</p>
+<p>1. sky matrix diffuse
+3. sun matrix (aka analemma)</p>
+<p>This methdo genrates sun matrix under project_folder/sky and return the commands
+to generate sky number 1.</p>
+<p>Returns a namedtuple for (output_files, commands)
+output_files in a namedtuple itself (sky_mtx_total, sky_mtx_direct, analemma,</p>
+<blockquote>
+<div>sunlist, analemmaMtx).</div></blockquote>
+<p>Simplified method will only calculate radiation under patched sky.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.get_commands_scene_daylight_coeff">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">get_commands_scene_daylight_coeff</code><span class="sig-paren">(</span><em>project_name</em>, <em>sky_density</em>, <em>project_folder</em>, <em>skyfiles</em>, <em>inputfiles</em>, <em>points_file</em>, <em>total_point_count</em>, <em>rfluxmtx_parameters</em>, <em>reuse_daylight_mtx=False</em>, <em>total_count=1</em>, <em>radiation_only=False</em>, <em>transpose=False</em>, <em>simplified=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#get_commands_scene_daylight_coeff"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.get_commands_scene_daylight_coeff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get commands for the static windows in the scene.</p>
+<p>Use get_commands_w_groups_daylight_coeff to get the commands for the rest of the
+scene.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>project_name</strong> – A string to generate uniqe file names for this project.</li>
+<li><strong>sky_density</strong> – Sky density for this study.</li>
+<li><strong>project_folder</strong> – Path to project_folder.</li>
+<li><strong>skyfiles</strong> – Collection of path to sky files. The order must be (sky_mtx_total,
+sky_mtx_direct, analemma, sunlist, analemmaMtx). You can use get_commands_sky
+function to generate this list.</li>
+<li><strong>inputfiles</strong> – Input files for this study. The order must be (opqfiles, glzfiles,
+wgsfiles, extrafiles). Each files object is a namedtuple which includes
+filepath to radiance files under fp and filepath to backed out files under
+fpblk.</li>
+<li><strong>points_file</strong> – Path to points_file.</li>
+<li><strong>total_point_count</strong> – Number of total points inside points_file.</li>
+<li><strong>rfluxmtx_parameters</strong> – An instance of rfluxmtx_parameters for daylight matrix.</li>
+<li><strong>reuse_daylight_mtx</strong> – A boolean not to include the commands for daylight matrix
+calculation if they already exist inside the folder.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.get_commands_sky">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">get_commands_sky</code><span class="sig-paren">(</span><em>project_folder</em>, <em>sky_matrix</em>, <em>reuse=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#get_commands_sky"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.get_commands_sky" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list of commands to generate the skies.</p>
+<ol class="arabic simple">
+<li>total sky matrix</li>
+<li>direct only sky matrix</li>
+<li>sun matrix (aka analemma)</li>
+</ol>
+<p>This methdo genrates sun matrix under project_folder/sky and return the commands
+to generate skies number 1 and 2.</p>
+<p>Returns a namedtuple for (output_files, commands)
+output_files in a namedtuple itself (sky_mtx_total, sky_mtx_direct, analemma,</p>
+<blockquote>
+<div>sunlist, analemmaMtx).</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.get_commands_w_groups_daylight_coeff">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">get_commands_w_groups_daylight_coeff</code><span class="sig-paren">(</span><em>project_name</em>, <em>sky_density</em>, <em>project_folder</em>, <em>window_groups</em>, <em>skyfiles</em>, <em>inputfiles</em>, <em>points_file</em>, <em>total_point_count</em>, <em>rfluxmtx_parameters</em>, <em>reuse_daylight_mtx=False</em>, <em>total_count=1</em>, <em>radiation_only=False</em>, <em>transpose=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#get_commands_w_groups_daylight_coeff"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.get_commands_w_groups_daylight_coeff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get commands for the static windows in the scene.</p>
+<p>Use get_commands_w_groups_daylight_coeff to get the commands for the rest of the
+scene.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>project_name</strong> – A string to generate uniqe file names for this project.</li>
+<li><strong>sky_density</strong> – Sky density for this study.</li>
+<li><strong>project_folder</strong> – Path to project_folder.</li>
+<li><strong>window_groups</strong> – List of window_groups.</li>
+<li><strong>skyfiles</strong> – Collection of path to sky files. The order must be (sky_mtx_total,
+sky_mtx_direct, analemma, sunlist, analemmaMtx). You can use get_commands_sky
+function to generate this list.</li>
+<li><strong>inputfiles</strong> – Input files for this study. The order must be (opqfiles, glzfiles,
+wgsfiles, extrafiles). Each files object is a namedtuple which includes
+filepath to radiance files under fp and filepath to backed out files under
+fpblk.</li>
+<li><strong>points_file</strong> – Path to points_file.</li>
+<li><strong>total_point_count</strong> – Number of total points inside points_file.</li>
+<li><strong>rfluxmtx_parameters</strong> – An instance of rfluxmtx_parameters for daylight matrix.</li>
+<li><strong>reuse_daylight_mtx</strong> – A boolean not to include the commands for daylight matrix
+calculation if they already exist inside the folder.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.image_based_view_coeff_matrix_commands">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">image_based_view_coeff_matrix_commands</code><span class="sig-paren">(</span><em>receiver</em>, <em>rad_files</em>, <em>sender</em>, <em>view_info_file</em>, <em>view_file</em>, <em>view_rays_file</em>, <em>rfluxmtx_parameters=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#image_based_view_coeff_matrix_commands"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.image_based_view_coeff_matrix_commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns radiance commands to create coefficient matrix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>receiver</strong> – A radiance file to indicate the receiver. In view matrix it will be the</li>
+<li><strong>group and in daylight matrix it will be the sky.</strong> (<em>window</em>) – </li>
+<li><strong>rad_files</strong> – A collection of Radiance files that should be included in the scene.</li>
+<li><strong>sender</strong> – A collection of files for senders if senders are radiance geometries
+such as window groups (Default: ‘-‘).</li>
+<li><strong>points_file</strong> – Path to point file which will be used instead of sender.</li>
+<li><strong>number_of_points</strong> – Number of points in points_file as an integer.</li>
+<li><strong>sampling_rays_count</strong> – Number of sampling rays (Default: 1000).</li>
+<li><strong>rfluxmtx_parameters</strong> – Radiance parameters for Rfluxmtx command using a
+RfluxmtxParameters instance (Default: None).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.image_based_view_matrix_calculation">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">image_based_view_matrix_calculation</code><span class="sig-paren">(</span><em>view</em>, <em>wg</em>, <em>state</em>, <em>sky_matrix</em>, <em>extention=''</em>, <em>digits=3</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#image_based_view_matrix_calculation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.image_based_view_matrix_calculation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.image_based_view_sampling_commands">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">image_based_view_sampling_commands</code><span class="sig-paren">(</span><em>project_folder</em>, <em>view</em>, <em>view_file</em>, <em>vwrays_parameters</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#image_based_view_sampling_commands"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.image_based_view_sampling_commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return VWrays command for calculating view coefficient matrix.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.imaged_based_sun_coeff_matrix_commands">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">imaged_based_sun_coeff_matrix_commands</code><span class="sig-paren">(</span><em>output_filename_format</em>, <em>view</em>, <em>view_rays_file</em>, <em>scene_files</em>, <em>analemma</em>, <em>sunlist</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#imaged_based_sun_coeff_matrix_commands"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.imaged_based_sun_coeff_matrix_commands" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.matrix_calculation">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">matrix_calculation</code><span class="sig-paren">(</span><em>output</em>, <em>v_matrix=None</em>, <em>t_matrix=None</em>, <em>d_matrix=None</em>, <em>sky_matrix=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#matrix_calculation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.matrix_calculation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get commands for matrix calculation.</p>
+<p>This method sets up a matrix calculations using Dctimestep.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.rgb_matrix_file_to_ill">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">rgb_matrix_file_to_ill</code><span class="sig-paren">(</span><em>input</em>, <em>output</em>, <em>transpose=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#rgb_matrix_file_to_ill"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.rgb_matrix_file_to_ill" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert rgb values in matrix to illuminance values.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.sky_receiver">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">sky_receiver</code><span class="sig-paren">(</span><em>filepath</em>, <em>density</em>, <em>ground_file_format=None</em>, <em>sky_file_format=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#sky_receiver"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.sky_receiver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a receiver sky for daylight coefficient studies.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.skymtx_to_gendaymtx">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">skymtx_to_gendaymtx</code><span class="sig-paren">(</span><em>sky_matrix</em>, <em>target_folder</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#skymtx_to_gendaymtx"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.skymtx_to_gendaymtx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return gendaymtx command based on input sky_matrix.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.sun_coeff_matrix_commands">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">sun_coeff_matrix_commands</code><span class="sig-paren">(</span><em>output</em>, <em>point_file</em>, <em>scene_files</em>, <em>analemma</em>, <em>sunlist</em>, <em>irradiance_calc</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#sun_coeff_matrix_commands"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.sun_coeff_matrix_commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return commands for calculating analemma coefficient.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>output</strong> – Output daylight coefficient file (e.g. suncoeff.dc).</li>
+<li><strong>point_file</strong> – Path to point / analysis grid file. In case of multiple grid
+put them together in a single file.</li>
+<li><strong>scene_files</strong> – A list fo scene files. Usually black scene.</li>
+<li><strong>analemma</strong> – Path to analemma file. You can generate analemma file using
+sun_matrix class. Analemma has list of sun positions with their respective
+values.</li>
+<li><strong>sunlist</strong> – Path to sunlist. Use sun_matrix to generate sunlist.</li>
+<li><strong>simulation_type</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">octree and rcontrib commands ready to be executed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.sun_matrix_calculation">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">sun_matrix_calculation</code><span class="sig-paren">(</span><em>output</em>, <em>dc_matrix=None</em>, <em>sky_matrix=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#sun_matrix_calculation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.sun_matrix_calculation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get commands for sun matrix calculation.</p>
+<p>This method sets up a matrix calculations using Dctimestep.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.window_group_to_receiver">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">window_group_to_receiver</code><span class="sig-paren">(</span><em>filepath</em>, <em>upnormal</em>, <em>material_name='vmtx_glow'</em>, <em>angle_basis='Kelms Full'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#window_group_to_receiver"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.window_group_to_receiver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take a filepath to a window group and create a receiver.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="honeybee.radiance.recipe.recipedcutil.write_rad_files_daylight_coeff">
+<code class="descclassname">honeybee.radiance.recipe.recipedcutil.</code><code class="descname">write_rad_files_daylight_coeff</code><span class="sig-paren">(</span><em>working_dir</em>, <em>project_name</em>, <em>opq</em>, <em>glz</em>, <em>wgs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee/radiance/recipe/recipedcutil.html#write_rad_files_daylight_coeff"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#honeybee.radiance.recipe.recipedcutil.write_rad_files_daylight_coeff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write files to a target directory for daylight coefficeint method.</p>
+<dl class="docutils">
+<dt>The files will be written under</dt>
+<dd>working_dir/opaque
+working_dir/glazing
+working_dir/wgroup</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>working_dir</strong> – Path to working directory.</li>
+<li><strong>opq</strong> – A RadFile for opaque surfaces.</li>
+<li><strong>glz</strong> – A RadFile for glazing surfaces.</li>
+<li><strong>wgs</strong> – A collection of RadFiles for window-groups.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A named tuple for each RadFile as (fp, fpblk)
+fp returns the file path to the list of radiance files.
+fpblk returns the file path to the list of blacked radiance files.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

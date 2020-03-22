@@ -1,0 +1,7 @@
+honeybee.radiance.parameters.gendaymtx module
+=============================================
+
+.. automodule:: honeybee.radiance.parameters.gendaymtx
+    :members:
+    :undoc-members:
+    :show-inheritance:

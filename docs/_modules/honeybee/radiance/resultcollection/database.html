@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>honeybee.radiance.resultcollection.database &#8212; honeybee 0.1.16 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../../../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../../index.html">
+          honeybee</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.1.16</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../honeybee.html">honeybee package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../honeybee.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.energyplus.html">honeybee.energyplus package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../honeybee.energyplus.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.energyplus.filemanager.html">honeybee.energyplus.filemanager module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.energyplus.geometryrules.html">honeybee.energyplus.geometryrules module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../honeybee.energyplus.html#module-honeybee.energyplus">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.radiance.html">honeybee.radiance package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../honeybee.radiance.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.command.html">honeybee.radiance.command package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.command.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.pyRad.html">honeybee.radiance.command.pyRad package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.command.pyRad.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.command.pyRad.pyRadLib.html">honeybee.radiance.command.pyRad.pyRadLib package</a><ul>
+<li class="toctree-l10"><a class="reference internal" href="../../../../honeybee.radiance.command.pyRad.pyRadLib.html#submodules">Submodules</a><ul>
+<li class="toctree-l11"><a class="reference internal" href="../../../../honeybee.radiance.command.pyRad.pyRadLib.pyrad_proc.html">honeybee.radiance.command.pyRad.pyRadLib.pyrad_proc module</a></li>
+</ul>
+</li>
+<li class="toctree-l10"><a class="reference internal" href="../../../../honeybee.radiance.command.pyRad.pyRadLib.html#module-honeybee.radiance.command.pyRad.pyRadLib">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.command.pyRad.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.command.pyRad.objview.html">honeybee.radiance.command.pyRad.objview module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.command.pyRad.html#module-honeybee.radiance.command.pyRad">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.command.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.dctimestep.html">honeybee.radiance.command.dctimestep module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.epw2wea.html">honeybee.radiance.command.epw2wea module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.falsecolor.html">honeybee.radiance.command.falsecolor module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.genBSDF.html">honeybee.radiance.command.genBSDF module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.gendaylit.html">honeybee.radiance.command.gendaylit module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.gendaymtx.html">honeybee.radiance.command.gendaymtx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.gensky.html">honeybee.radiance.command.gensky module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.genskyvec.html">honeybee.radiance.command.genskyvec module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.getbbox.html">honeybee.radiance.command.getbbox module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.getinfo.html">honeybee.radiance.command.getinfo module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.mkpmap.html">honeybee.radiance.command.mkpmap module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.objview.html">honeybee.radiance.command.objview module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.oconv.html">honeybee.radiance.command.oconv module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.pcomb.html">honeybee.radiance.command.pcomb module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.raBmp.html">honeybee.radiance.command.raBmp module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.raTiff.html">honeybee.radiance.command.raTiff module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.rcalc.html">honeybee.radiance.command.rcalc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.rcollate.html">honeybee.radiance.command.rcollate module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.rcontrib.html">honeybee.radiance.command.rcontrib module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.rfluxmtx.html">honeybee.radiance.command.rfluxmtx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.rmtxop.html">honeybee.radiance.command.rmtxop module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.rpict.html">honeybee.radiance.command.rpict module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.rtrace.html">honeybee.radiance.command.rtrace module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.vwrays.html">honeybee.radiance.command.vwrays module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.command.xform.html">honeybee.radiance.command.xform module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.command.html#module-honeybee.radiance.command">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.geometry.html">honeybee.radiance.geometry package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.geometry.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.bubble.html">honeybee.radiance.geometry.bubble module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.cone.html">honeybee.radiance.geometry.cone module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.cup.html">honeybee.radiance.geometry.cup module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.cylinder.html">honeybee.radiance.geometry.cylinder module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.geometrybase.html">honeybee.radiance.geometry.geometrybase module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.instance.html">honeybee.radiance.geometry.instance module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.mesh.html">honeybee.radiance.geometry.mesh module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.polygon.html">honeybee.radiance.geometry.polygon module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.ring.html">honeybee.radiance.geometry.ring module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.source.html">honeybee.radiance.geometry.source module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.sphere.html">honeybee.radiance.geometry.sphere module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.geometry.tube.html">honeybee.radiance.geometry.tube module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.geometry.html#module-honeybee.radiance.geometry">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.material.html">honeybee.radiance.material package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.material.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.antimatter.html">honeybee.radiance.material.antimatter module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.ashik2.html">honeybee.radiance.material.ashik2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.brtdfunc.html">honeybee.radiance.material.brtdfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.bsdf.html">honeybee.radiance.material.bsdf module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.dielectric.html">honeybee.radiance.material.dielectric module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.glass.html">honeybee.radiance.material.glass module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.glow.html">honeybee.radiance.material.glow module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.illum.html">honeybee.radiance.material.illum module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.interface.html">honeybee.radiance.material.interface module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.light.html">honeybee.radiance.material.light module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.materialbase.html">honeybee.radiance.material.materialbase module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.metal.html">honeybee.radiance.material.metal module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.metal2.html">honeybee.radiance.material.metal2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.metdata.html">honeybee.radiance.material.metdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.metfunc.html">honeybee.radiance.material.metfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.mirror.html">honeybee.radiance.material.mirror module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.mist.html">honeybee.radiance.material.mist module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.plasdata.html">honeybee.radiance.material.plasdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.plasfunc.html">honeybee.radiance.material.plasfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.plastic.html">honeybee.radiance.material.plastic module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.plastic2.html">honeybee.radiance.material.plastic2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.prism1.html">honeybee.radiance.material.prism1 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.prism2.html">honeybee.radiance.material.prism2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.spotlight.html">honeybee.radiance.material.spotlight module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.trans.html">honeybee.radiance.material.trans module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.trans2.html">honeybee.radiance.material.trans2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.transdata.html">honeybee.radiance.material.transdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.material.transfunc.html">honeybee.radiance.material.transfunc module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.material.html#module-honeybee.radiance.material">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.mixture.html">honeybee.radiance.mixture package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.mixture.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.mixture.mixdata.html">honeybee.radiance.mixture.mixdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.mixture.mixfunc.html">honeybee.radiance.mixture.mixfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.mixture.mixpict.html">honeybee.radiance.mixture.mixpict module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.mixture.mixtext.html">honeybee.radiance.mixture.mixtext module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.mixture.mixturebase.html">honeybee.radiance.mixture.mixturebase module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.mixture.html#module-honeybee.radiance.mixture">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.parameters.html">honeybee.radiance.parameters package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.parameters.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.dctimestep.html">honeybee.radiance.parameters.dctimestep module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.falsecolor.html">honeybee.radiance.parameters.falsecolor module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.genBsdf.html">honeybee.radiance.parameters.genBsdf module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.gendaylit.html">honeybee.radiance.parameters.gendaylit module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.gendaymtx.html">honeybee.radiance.parameters.gendaymtx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.gensky.html">honeybee.radiance.parameters.gensky module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.mkpmap.html">honeybee.radiance.parameters.mkpmap module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.oconv.html">honeybee.radiance.parameters.oconv module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.pcomb.html">honeybee.radiance.parameters.pcomb module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.raBmp.html">honeybee.radiance.parameters.raBmp module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.raTiff.html">honeybee.radiance.parameters.raTiff module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.rcalc.html">honeybee.radiance.parameters.rcalc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.rcollate.html">honeybee.radiance.parameters.rcollate module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.rcontrib.html">honeybee.radiance.parameters.rcontrib module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.rfluxmtx.html">honeybee.radiance.parameters.rfluxmtx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.rmtxop.html">honeybee.radiance.parameters.rmtxop module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.rpict.html">honeybee.radiance.parameters.rpict module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.rtrace.html">honeybee.radiance.parameters.rtrace module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.vwrays.html">honeybee.radiance.parameters.vwrays module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.parameters.xform.html">honeybee.radiance.parameters.xform module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.parameters.html#module-honeybee.radiance.parameters">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.pattern.html">honeybee.radiance.pattern package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.pattern.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.pattern.brightdata.html">honeybee.radiance.pattern.brightdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.pattern.brightfunc.html">honeybee.radiance.pattern.brightfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.pattern.brighttext.html">honeybee.radiance.pattern.brighttext module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.pattern.colordata.html">honeybee.radiance.pattern.colordata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.pattern.colorfunc.html">honeybee.radiance.pattern.colorfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.pattern.colorpict.html">honeybee.radiance.pattern.colorpict module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.pattern.colortext.html">honeybee.radiance.pattern.colortext module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.pattern.patternbase.html">honeybee.radiance.pattern.patternbase module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.pattern.html#module-honeybee.radiance.pattern">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.recipe.html">honeybee.radiance.recipe package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.recipe.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.annual.html">honeybee.radiance.recipe.annual package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.annual.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.annual.gridbased.html">honeybee.radiance.recipe.annual.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.annual.html#module-honeybee.radiance.recipe.annual">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.daylightcoeff.html">honeybee.radiance.recipe.daylightcoeff package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.daylightcoeff.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.daylightcoeff.gridbased.html">honeybee.radiance.recipe.daylightcoeff.gridbased module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.daylightcoeff.imagebased.html">honeybee.radiance.recipe.daylightcoeff.imagebased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.daylightcoeff.html#module-honeybee.radiance.recipe.daylightcoeff">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.daylightfactor.html">honeybee.radiance.recipe.daylightfactor package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.daylightfactor.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.daylightfactor.gridbased.html">honeybee.radiance.recipe.daylightfactor.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.daylightfactor.html#module-honeybee.radiance.recipe.daylightfactor">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.directreflection.html">honeybee.radiance.recipe.directreflection package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.directreflection.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.directreflection.gridbased.html">honeybee.radiance.recipe.directreflection.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.directreflection.html#module-honeybee.radiance.recipe.directreflection">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.fivephase.html">honeybee.radiance.recipe.fivephase package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.fivephase.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.fivephase.gridbased.html">honeybee.radiance.recipe.fivephase.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.fivephase.html#module-honeybee.radiance.recipe.fivephase">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.pointintime.html">honeybee.radiance.recipe.pointintime package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.pointintime.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.pointintime.gridbased.html">honeybee.radiance.recipe.pointintime.gridbased module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.pointintime.imagebased.html">honeybee.radiance.recipe.pointintime.imagebased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.pointintime.html#module-honeybee.radiance.recipe.pointintime">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.radiation.html">honeybee.radiance.recipe.radiation package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.radiation.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.radiation.gridbased.html">honeybee.radiance.recipe.radiation.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.radiation.html#module-honeybee.radiance.recipe.radiation">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.solaraccess.html">honeybee.radiance.recipe.solaraccess package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.solaraccess.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.solaraccess.gridbased.html">honeybee.radiance.recipe.solaraccess.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.solaraccess.html#module-honeybee.radiance.recipe.solaraccess">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.threephase.html">honeybee.radiance.recipe.threephase package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.threephase.html#submodules">Submodules</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../../../honeybee.radiance.recipe.threephase.gridbased.html">honeybee.radiance.recipe.threephase.gridbased module</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../../../honeybee.radiance.recipe.threephase.html#module-honeybee.radiance.recipe.threephase">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.recipe.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.id.html">honeybee.radiance.recipe.id module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.parameters.html">honeybee.radiance.recipe.parameters module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.recipedcutil.html">honeybee.radiance.recipe.recipedcutil module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.recipeutil.html">honeybee.radiance.recipe.recipeutil module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.recipe.recipexphaseutil.html">honeybee.radiance.recipe.recipexphaseutil module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.recipe.html#module-honeybee.radiance.recipe">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.resultcollection.html">honeybee.radiance.resultcollection package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.resultcollection.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.resultcollection.database.html">honeybee.radiance.resultcollection.database module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.resultcollection.imagecollection.html">honeybee.radiance.resultcollection.imagecollection module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.resultcollection.pointintime.html">honeybee.radiance.resultcollection.pointintime module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.resultcollection.resultgrid.html">honeybee.radiance.resultcollection.resultgrid module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.resultcollection.timeseries.html">honeybee.radiance.resultcollection.timeseries module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.resultcollection.html#module-honeybee.radiance.resultcollection">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.sky.html">honeybee.radiance.sky package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.sky.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.sky.analemma.html">honeybee.radiance.sky.analemma module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.sky.certainIlluminance.html">honeybee.radiance.sky.certainIlluminance module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.sky.cie.html">honeybee.radiance.sky.cie module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.sky.climatebased.html">honeybee.radiance.sky.climatebased module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.sky.gendaylit.html">honeybee.radiance.sky.gendaylit module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.sky.skymatrix.html">honeybee.radiance.sky.skymatrix module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.sky.skyvector.html">honeybee.radiance.sky.skyvector module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.sky.sunmatrix.html">honeybee.radiance.sky.sunmatrix module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.sky.html#module-honeybee.radiance.sky">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.texture.html">honeybee.radiance.texture package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.texture.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.texture.texdata.html">honeybee.radiance.texture.texdata module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.texture.texfunc.html">honeybee.radiance.texture.texfunc module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../honeybee.radiance.texture.texturebase.html">honeybee.radiance.texture.texturebase module</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../honeybee.radiance.texture.html#module-honeybee.radiance.texture">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../honeybee.radiance.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.analysisgrid.html">honeybee.radiance.analysisgrid module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.analysisgridlite.html">honeybee.radiance.analysisgridlite module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.analysispoint.html">honeybee.radiance.analysispoint module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.analysispointlite.html">honeybee.radiance.analysispointlite module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.datatype.html">honeybee.radiance.datatype module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.factory.html">honeybee.radiance.factory module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.primitive.html">honeybee.radiance.primitive module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.properties.html">honeybee.radiance.properties module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.radfile.html">honeybee.radiance.radfile module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.radparser.html">honeybee.radiance.radparser module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.scene.html">honeybee.radiance.scene module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.staticscene.html">honeybee.radiance.staticscene module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.radiance.view.html">honeybee.radiance.view module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../honeybee.radiance.html#module-honeybee.radiance">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.server.html">honeybee.server package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../honeybee.server.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.server.client.html">honeybee.server.client module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.server.mpupload.html">honeybee.server.mpupload module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../honeybee.server.html#module-honeybee.server">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.vectormath.html">honeybee.vectormath package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../honeybee.vectormath.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../../honeybee.vectormath.euclid.html">honeybee.vectormath.euclid module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../honeybee.vectormath.html#module-honeybee.vectormath">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../honeybee.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.config.html">honeybee.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.dataoperation.html">honeybee.dataoperation module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.exception.html">honeybee.exception module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.futil.html">honeybee.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.geometryoperation.html">honeybee.geometryoperation module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.hbdynamicsurface.html">honeybee.hbdynamicsurface module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.hbfensurface.html">honeybee.hbfensurface module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.hbobject.html">honeybee.hbobject module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.hbshadesurface.html">honeybee.hbshadesurface module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.hbsurface.html">honeybee.hbsurface module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.hbzone.html">honeybee.hbzone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.room.html">honeybee.room module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.schedule.html">honeybee.schedule module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.surfaceproperties.html">honeybee.surfaceproperties module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.surfacetype.html">honeybee.surfacetype module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.utilcol.html">honeybee.utilcol module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../honeybee.windowgroup.html">honeybee.windowgroup module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../honeybee.html#module-honeybee">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../honeybee.html">honeybee package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../honeybee.html">honeybee package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <h1>Source code for honeybee.radiance.resultcollection.database</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Database to save grid-based daylight simulation recipes.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<span class="kn">from</span> <span class="nn">..recipe.id</span> <span class="kn">import</span> <span class="n">COMBINEDRECIPEIDS</span><span class="p">,</span> <span class="n">FLOATRECIPEIDS</span>
+<span class="kn">from</span> <span class="nn">..recipe.id</span> <span class="kn">import</span> <span class="n">get_id</span> <span class="k">as</span> <span class="n">get_recipe_id</span>
+<span class="kn">from</span> <span class="nn">..recipe.id</span> <span class="kn">import</span> <span class="n">get_name</span> <span class="k">as</span> <span class="n">get_recipe_name</span>
+<span class="kn">from</span> <span class="nn">..recipe.id</span> <span class="kn">import</span> <span class="n">is_point_in_time</span> <span class="k">as</span> <span class="n">is_recipe_pit</span>
+<span class="kn">import</span> <span class="nn">contextlib</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">timedelta</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span> <span class="k">as</span> <span class="nn">lite</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)):</span>
+    <span class="n">xrange</span> <span class="o">=</span> <span class="nb">range</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">izip</span> <span class="k">as</span> <span class="nb">zip</span>
+
+
+<div class="viewcode-block" id="Database"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database">[docs]</a><span class="k">class</span> <span class="nc">Database</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Sqlite3 database for honeybee grid_based daylight simulation.</span>
+
+<span class="sd">    The database currently only supports grid-based simulations.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">BASESOURCEID</span> <span class="o">=</span> <span class="mi">1000000</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filepath</span><span class="o">=</span><span class="s1">&#39;radout.db&#39;</span><span class="p">,</span> <span class="n">remove_if_exist</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initate database.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            folder: Path to folder to create database.</span>
+<span class="sd">            filename: Optional database filename (default:radout)</span>
+<span class="sd">            clean_if_exist: Clean the data in database file if the file exist</span>
+<span class="sd">                (default: False).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_filepath</span> <span class="o">=</span> <span class="n">filepath</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span> <span class="ow">and</span> <span class="n">remove_if_exist</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+
+        <span class="n">project_table_schema</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS Project (</span>
+<span class="s2">            name TEXT NOT NULL,</span>
+<span class="s2">            recipe TEXT NOT NULL,</span>
+<span class="s2">            city TEXT,</span>
+<span class="s2">            latitude REAL,</span>
+<span class="s2">            longitude REAL,</span>
+<span class="s2">            time_zone REAL,</span>
+<span class="s2">            elevation REAL,</span>
+<span class="s2">            results_loaded_at TIMESTAMP</span>
+<span class="s2">            );&quot;&quot;&quot;</span>
+
+        <span class="c1"># sensors and analysis grids.</span>
+        <span class="n">sensor_table_schema</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS Sensor (</span>
+<span class="s2">                id INTEGER NOT NULL,</span>
+<span class="s2">                grid_id INTEGER NOT NULL,</span>
+<span class="s2">                loc_x REAL NOT NULL,</span>
+<span class="s2">                loc_y REAL NOT NULL,</span>
+<span class="s2">                loc_z REAL NOT NULL,</span>
+<span class="s2">                dir_x REAL NOT NULL,</span>
+<span class="s2">                dir_y REAL NOT NULL,</span>
+<span class="s2">                dir_z REAL NOT NULL,</span>
+<span class="s2">                FOREIGN KEY (grid_id) REFERENCES Grid(id),</span>
+<span class="s2">                CONSTRAINT sensor_grid_id PRIMARY KEY (id, grid_id)</span>
+<span class="s2">                );&quot;&quot;&quot;</span>
+
+        <span class="n">grid_table_schema</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS Grid (</span>
+<span class="s2">                id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,</span>
+<span class="s2">                name TEXT,</span>
+<span class="s2">                count INTEGER</span>
+<span class="s2">                );&quot;&quot;&quot;</span>
+
+        <span class="c1"># light sources including sky which keeps the is of 0</span>
+        <span class="n">source_table_schema</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS Source (</span>
+<span class="s2">                id INTEGER PRIMARY KEY UNIQUE,</span>
+<span class="s2">                source TEXT,</span>
+<span class="s2">                state TEXT</span>
+<span class="s2">                );&quot;&quot;&quot;</span>
+
+        <span class="c1"># light sources and analysis grids relationship</span>
+        <span class="n">source_grid_table_schema</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS SourceGrid (</span>
+<span class="s2">                source_id INTEGER NOT NULL,</span>
+<span class="s2">                grid_id INTEGER NOT NULL,</span>
+<span class="s2">                FOREIGN KEY (source_id) REFERENCES Source(id),</span>
+<span class="s2">                FOREIGN KEY (grid_id) REFERENCES Grid(id)</span>
+<span class="s2">                );&quot;&quot;&quot;</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;connecting to database at: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filepath</span><span class="p">))</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA synchronous=OFF&#39;</span><span class="p">)</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="c1"># create table for sensors</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">project_table_schema</span><span class="p">)</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sensor_table_schema</span><span class="p">)</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">grid_table_schema</span><span class="p">)</span>
+
+        <span class="c1"># create table for sources and place holder for results</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">source_table_schema</span><span class="p">)</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">source_grid_table_schema</span><span class="p">)</span>
+
+        <span class="c1"># add sky as the first light source if it doesn&#39;t exsit</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="sd">&quot;&quot;&quot;INSERT OR IGNORE INTO Source (id, source, state)</span>
+<span class="sd">            VALUES (0, &#39;sky&#39;, &#39;default&#39;);&quot;&quot;&quot;</span>
+        <span class="p">)</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<div class="viewcode-block" id="Database.from_analysis_recipe"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.from_analysis_recipe">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_analysis_recipe</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">analysis_recipe</span><span class="p">,</span> <span class="n">filepath</span><span class="o">=</span><span class="s1">&#39;radout.db&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initiate a database for a daylighting recipe.&quot;&quot;&quot;</span>
+        <span class="n">cls_</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+        <span class="n">cls_</span><span class="o">.</span><span class="n">add_analysis_grids</span><span class="p">(</span><span class="n">analysis_recipe</span><span class="o">.</span><span class="n">analysis_grids</span><span class="p">)</span>
+        <span class="n">cls_</span><span class="o">.</span><span class="n">add_result_tables</span><span class="p">(</span><span class="n">analysis_recipe</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">cls_</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">isDatabase</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return True for database object.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">db_filepath</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get path to database.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_filepath</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tables</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get list of tables.&quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">)</span>
+        <span class="n">tables</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT name FROM sqlite_master WHERE type=&#39;table&#39;;&quot;</span><span class="p">)</span>
+        <span class="n">tables</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">)</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">tables</span>
+
+<div class="viewcode-block" id="Database.execute"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.execute">[docs]</a>    <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Run sql command.&quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="n">contextlib</span><span class="o">.</span><span class="n">closing</span><span class="p">(</span><span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">))</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+            <span class="k">with</span> <span class="n">conn</span><span class="p">:</span>
+                <span class="k">with</span> <span class="n">contextlib</span><span class="o">.</span><span class="n">closing</span><span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">())</span> <span class="k">as</span> <span class="n">cursor</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">values</span><span class="p">:</span>
+                        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.executemany"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.executemany">[docs]</a>    <span class="k">def</span> <span class="nf">executemany</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Run sql command.&quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="n">contextlib</span><span class="o">.</span><span class="n">closing</span><span class="p">(</span><span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">))</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+            <span class="k">with</span> <span class="n">conn</span><span class="p">:</span>
+                <span class="k">with</span> <span class="n">contextlib</span><span class="o">.</span><span class="n">closing</span><span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">())</span> <span class="k">as</span> <span class="n">cursor</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">values</span><span class="p">:</span>
+                        <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.is_column"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.is_column">[docs]</a>    <span class="k">def</span> <span class="nf">is_column</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">column_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check if a column is available in a table in this database.&quot;&quot;&quot;</span>
+        <span class="n">cmd</span> <span class="o">=</span> <span class="s2">&quot;PRAGMA table_info(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">table_name</span>
+        <span class="k">return</span> <span class="n">column_name</span> <span class="ow">in</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">cmd</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="Database.clean"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.clean">[docs]</a>    <span class="k">def</span> <span class="nf">clean</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Clean the current data from the table.&quot;&quot;&quot;</span>
+        <span class="n">tables</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tables</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">)</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="c1"># clean data in each db</span>
+        <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">:</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;DELETE FROM </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">table</span><span class="p">)</span>
+
+        <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;VACUUM&quot;</span><span class="p">)</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.clean_table"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.clean_table">[docs]</a>    <span class="k">def</span> <span class="nf">clean_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">vaccum</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Clean the current data from the table.&quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">)</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="c1"># clean data in each db</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;DELETE FROM </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">table_name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">vaccum</span><span class="p">:</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;VACUUM&quot;</span><span class="p">)</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.last_sensor_id"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.last_sensor_id">[docs]</a>    <span class="k">def</span> <span class="nf">last_sensor_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grid_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the ID for last sensor.&quot;&quot;&quot;</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT seq FROM sqlite_sequence WHERE name=&#39;Sensor&#39;;&quot;&quot;&quot;</span>
+        <span class="n">sensor_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">sensor_id</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">sensor_id</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">last_source_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get id for last source.</span>
+
+<span class="sd">        Id is an intger indicates global id for this source. The gid is a 7 digit</span>
+<span class="sd">        number. int(gid / 10^6) is the id of the source and gid % 10^6 is the</span>
+<span class="sd">        id for the state.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT id FROM Source ORDER BY id DESC LIMIT 1;&quot;&quot;&quot;</span>
+        <span class="n">source_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">source_id</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">source_id</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">last_grid_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get id for the last grid.&quot;&quot;&quot;</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT seq FROM sqlite_sequence WHERE name=&#39;Grid&#39;;&quot;&quot;&quot;</span>
+        <span class="n">grid_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">grid_id</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">grid_id</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sources</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get light sources as a dictionary.</span>
+
+<span class="sd">        source_name..state is the key and id is the value.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">sources</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;SELECT source, state, id FROM Source;&quot;&quot;&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;..&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">((</span><span class="n">source</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">source</span><span class="p">[</span><span class="mi">1</span><span class="p">])):</span> <span class="n">source</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">sources</span><span class="p">}</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sources_distinct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get unique name of light sources as a tuple.</span>
+
+<span class="sd">        Names are sorted based on id.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT DISTINCT source FROM Source ORDER BY id;&quot;&quot;&quot;</span>
+        <span class="n">sources</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">src</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">src</span> <span class="ow">in</span> <span class="n">sources</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">source_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get list of source ids.&quot;&quot;&quot;</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT id FROM Source ORDER BY id;&quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ids</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_load_sources_from_files</span><span class="p">(</span><span class="n">result_files</span><span class="p">):</span>
+        <span class="n">sources</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">fi</span> <span class="ow">in</span> <span class="n">result_files</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">_</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">state</span> <span class="o">=</span> <span class="n">fi</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="n">source</span><span class="p">,</span> <span class="n">state</span> <span class="o">=</span> <span class="n">fi</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">source</span> <span class="o">==</span> <span class="s1">&#39;scene&#39;</span><span class="p">:</span>
+                <span class="n">source</span> <span class="o">=</span> <span class="s1">&#39;sky&#39;</span>
+            <span class="k">if</span> <span class="n">source</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sources</span><span class="p">:</span>
+                <span class="c1"># add source</span>
+                <span class="n">sources</span><span class="p">[</span><span class="n">source</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">state</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">state</span> <span class="o">==</span> <span class="s1">&#39;default&#39;</span><span class="p">:</span>
+                    <span class="n">sources</span><span class="p">[</span><span class="n">source</span><span class="p">]</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">sources</span><span class="p">[</span><span class="n">source</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">sources</span>
+
+    <span class="k">def</span> <span class="nf">_add_new_sources</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sources</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add new sources from sources dictionary.&quot;&quot;&quot;</span>
+        <span class="c1"># add new sources if any</span>
+        <span class="n">current_sources</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sources</span>
+        <span class="k">for</span> <span class="n">source</span><span class="p">,</span> <span class="n">states</span> <span class="ow">in</span> <span class="n">sources</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">for</span> <span class="n">state</span> <span class="ow">in</span> <span class="n">states</span><span class="p">:</span>
+                <span class="n">key</span> <span class="o">=</span> <span class="s1">&#39;..&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">((</span><span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">))</span>
+                <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">current_sources</span><span class="p">:</span>
+                    <span class="k">continue</span>
+                <span class="c1"># get state id based on state name, etc.</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">add_source</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Database.last_state_id"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.last_state_id">[docs]</a>    <span class="k">def</span> <span class="nf">last_state_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get last global id for this source.&quot;&quot;&quot;</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT id FROM Source WHERE source=? ORDER BY id DESC LIMIT 1;&quot;&quot;&quot;</span>
+        <span class="n">sid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="p">(</span><span class="n">source</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">sid</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Failed to find source &quot;</span><span class="si">{}</span><span class="s1">&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">source</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">sid</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Database.source_id"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.source_id">[docs]</a>    <span class="k">def</span> <span class="nf">source_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get id for a light sources at a specific state.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;scene&#39;</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;sky&#39;</span>
+
+        <span class="n">sid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="sd">&quot;&quot;&quot;SELECT id FROM Source WHERE source=? AND state=?;&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">state</span><span class="p">))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">sid</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s1">&#39;Failed to find source &quot;</span><span class="si">{}</span><span class="s1">&quot; with state &quot;</span><span class="si">{}</span><span class="s1">&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">sid</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">source_mapper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returna dictionary that maps src_id and state_id to global id.</span>
+
+<span class="sd">        {src_id: {state_id: id}, ...}</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">sources</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;SELECT id, src_id, state_id FROM Source;&quot;&quot;&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">srid</span><span class="p">,</span> <span class="n">stid</span><span class="p">)</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">srid</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sources</span><span class="p">:</span>
+                <span class="n">sources</span><span class="p">[</span><span class="n">srid</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="n">sources</span><span class="p">[</span><span class="n">srid</span><span class="p">][</span><span class="n">stid</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+
+        <span class="k">return</span> <span class="n">sources</span>
+
+<div class="viewcode-block" id="Database.grid_id"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.grid_id">[docs]</a>    <span class="k">def</span> <span class="nf">grid_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get id for an analysis grid.&quot;&quot;&quot;</span>
+        <span class="n">gid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="sd">&quot;&quot;&quot;SELECT id FROM Grid WHERE name=?;&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">gid</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s1">&#39;Failed to find analysis grid with name: &quot;</span><span class="si">{}</span><span class="s1">&quot;.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">gid</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">point_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns a tuple of number of points for Analysis Grids.</span>
+
+<span class="sd">        Values are sorted by grid_id.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT count FROM Grid ORDER BY id;&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">))</span>
+
+<div class="viewcode-block" id="Database.add_result_tables"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.add_result_tables">[docs]</a>    <span class="k">def</span> <span class="nf">add_result_tables</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">recipe_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add result tables to database.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            recipe_id: Recipe id as indicated in honeybee.radiance.recipe.id</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            returns list of table names that are added to database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># daylight analysis results</span>
+        <span class="n">timeseries_result_table_schema</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS </span><span class="si">%s</span><span class="s2"> (</span>
+<span class="s2">                sensor_id INTEGER NOT NULL,</span>
+<span class="s2">                grid_id INTEGER NOT NULL,</span>
+<span class="s2">                source_id INTEGER NOT NULL,</span>
+<span class="s2">                moy INTEGER NOT NULL,</span>
+<span class="s2">                value INT,</span>
+<span class="s2">                FOREIGN KEY (sensor_id) REFERENCES Sensor(id),</span>
+<span class="s2">                FOREIGN KEY (grid_id) REFERENCES Grid(id),</span>
+<span class="s2">                FOREIGN KEY (source_id) REFERENCES Source(id),</span>
+<span class="s2">                CONSTRAINT result_id PRIMARY KEY (sensor_id, grid_id, source_id, moy)</span>
+<span class="s2">                );&quot;&quot;&quot;</span>
+
+        <span class="n">timeseries_combined_result_table_schema</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS </span><span class="si">%s</span><span class="s2"> (</span>
+<span class="s2">                sensor_id INTEGER NOT NULL,</span>
+<span class="s2">                grid_id INTEGER NOT NULL,</span>
+<span class="s2">                source_id INTEGER NOT NULL,</span>
+<span class="s2">                moy INTEGER NOT NULL,</span>
+<span class="s2">                </span><span class="si">%s</span><span class="s2"> INT,</span>
+<span class="s2">                FOREIGN KEY (sensor_id) REFERENCES Sensor(id),</span>
+<span class="s2">                FOREIGN KEY (grid_id) REFERENCES Grid(id),</span>
+<span class="s2">                FOREIGN KEY (source_id) REFERENCES Source(id),</span>
+<span class="s2">                CONSTRAINT result_id PRIMARY KEY (sensor_id, grid_id, source_id, moy)</span>
+<span class="s2">                );&quot;&quot;&quot;</span>
+
+        <span class="n">point_in_time_result_table_schema_float</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS </span><span class="si">%s</span><span class="s2"> (</span>
+<span class="s2">                sensor_id INTEGER NOT NULL,</span>
+<span class="s2">                grid_id INTEGER NOT NULL,</span>
+<span class="s2">                source_id INTEGER NOT NULL,</span>
+<span class="s2">                value REAL,</span>
+<span class="s2">                FOREIGN KEY (sensor_id) REFERENCES Sensor(id),</span>
+<span class="s2">                FOREIGN KEY (grid_id) REFERENCES Grid(id),</span>
+<span class="s2">                FOREIGN KEY (source_id) REFERENCES Source(id),</span>
+<span class="s2">                CONSTRAINT result_id PRIMARY KEY (sensor_id, grid_id, source_id)</span>
+<span class="s2">                );&quot;&quot;&quot;</span>
+
+        <span class="n">point_in_time_result_table_schema_int</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS </span><span class="si">%s</span><span class="s2"> (</span>
+<span class="s2">                sensor_id INTEGER NOT NULL,</span>
+<span class="s2">                grid_id INTEGER NOT NULL,</span>
+<span class="s2">                source_id INTEGER NOT NULL,</span>
+<span class="s2">                value INT,</span>
+<span class="s2">                FOREIGN KEY (sensor_id) REFERENCES Sensor(id),</span>
+<span class="s2">                FOREIGN KEY (grid_id) REFERENCES Grid(id),</span>
+<span class="s2">                FOREIGN KEY (source_id) REFERENCES Source(id),</span>
+<span class="s2">                CONSTRAINT result_id PRIMARY KEY (sensor_id, grid_id, source_id)</span>
+<span class="s2">                );&quot;&quot;&quot;</span>
+
+        <span class="c1"># get information to add result table(s)</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">get_recipe_name</span><span class="p">(</span><span class="n">recipe_id</span><span class="p">)</span>
+        <span class="n">point_in_time</span> <span class="o">=</span> <span class="n">is_recipe_pit</span><span class="p">(</span><span class="n">recipe_id</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">point_in_time</span><span class="p">:</span>
+            <span class="c1"># add a single table with the same name as the recipe</span>
+            <span class="k">if</span> <span class="n">recipe_id</span> <span class="ow">in</span> <span class="n">FLOATRECIPEIDS</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">point_in_time_result_table_schema_float</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">point_in_time_result_table_schema_int</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">name</span><span class="p">,)</span>
+        <span class="k">elif</span> <span class="n">recipe_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">COMBINEDRECIPEIDS</span><span class="p">:</span>
+            <span class="c1"># add a single table with the same name as the recipe</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">timeseries_result_table_schema</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">name</span><span class="p">,)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1">#  add 4 tables for sun, sky_total, sky_direct and final results.</span>
+            <span class="n">table_names</span> <span class="o">=</span> \
+                <span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;_sky_total&#39;</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;_sky_direct&#39;</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;_sun&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+            <span class="n">column_names</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;sky_total&#39;</span><span class="p">,</span> <span class="s1">&#39;sky_direct&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">cn</span><span class="p">,</span> <span class="n">tn</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">column_names</span><span class="p">,</span> <span class="n">table_names</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">timeseries_combined_result_table_schema</span> <span class="o">%</span> <span class="p">(</span><span class="n">tn</span><span class="p">,</span> <span class="n">cn</span><span class="p">))</span>
+
+            <span class="k">return</span> <span class="n">table_names</span></div>
+
+<div class="viewcode-block" id="Database.add_analysis_grids"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.add_analysis_grids">[docs]</a>    <span class="k">def</span> <span class="nf">add_analysis_grids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">analysis_grids</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add an analysis grids to database.&quot;&quot;&quot;</span>
+        <span class="n">sensor_command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        INSERT INTO Sensor (id, grid_id, loc_x, loc_y, loc_z, dir_x, dir_y, dir_z)</span>
+<span class="s2">        VALUES (?, ?, ?, ?, ?, ?, ?, ?);&quot;&quot;&quot;</span>
+        <span class="n">grid_command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;INSERT INTO Grid (id, name, count) VALUES (?, ?, ?);&quot;&quot;&quot;</span>
+
+        <span class="c1"># find the id for the last analysis grid</span>
+        <span class="n">start_grid_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_grid_id</span>
+        <span class="k">if</span> <span class="n">start_grid_id</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">start_grid_id</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">for</span> <span class="n">grid_id</span><span class="p">,</span> <span class="n">analysis_grid</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">analysis_grids</span><span class="p">):</span>
+            <span class="c1"># add analysis grid to db</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+                <span class="n">grid_command</span><span class="p">,</span>
+                <span class="p">(</span><span class="n">start_grid_id</span> <span class="o">+</span> <span class="n">grid_id</span><span class="p">,</span> <span class="n">analysis_grid</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">analysis_grid</span><span class="p">))</span>
+            <span class="p">)</span>
+            <span class="n">values</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">grid_id</span><span class="p">,</span>
+                 <span class="n">pt</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">z</span><span class="p">,</span>
+                 <span class="n">pt</span><span class="o">.</span><span class="n">direction</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">direction</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">direction</span><span class="o">.</span><span class="n">z</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">count</span><span class="p">,</span> <span class="n">pt</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">analysis_grid</span><span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">sensor_command</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Database.add_source"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.add_source">[docs]</a>    <span class="k">def</span> <span class="nf">add_source</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add a light source to database.</span>
+
+<span class="sd">        In + 3-phase studies light sources are window groups. In rest of studies sky</span>
+<span class="sd">        is considered the light source and id 0 is reserved for sky.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            name: Name of source.</span>
+<span class="sd">            state: Name of state.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            gid: An intger indicates global id for this source. The gid is a 7 digit</span>
+<span class="sd">                number. int(gid / 10^6) is the id of the source and gid % 10^6 is the</span>
+<span class="sd">                id for the state.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># see if it already exist</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">gid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">source_id</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">..</span><span class="si">{}</span><span class="s1"> already exist!&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">gid</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="c1"># it doesn&#39;t exist so let&#39;s calculate the id and add it to database</span>
+            <span class="k">pass</span>
+        <span class="c1"># see if the source already exist and get the highest gid for this source</span>
+        <span class="c1"># and add it up by 1 otherwise get the highest id number and generate a new</span>
+        <span class="c1"># id for this new source</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># check if the source is in database but not the state</span>
+            <span class="n">lid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_state_id</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+            <span class="n">gid</span> <span class="o">=</span> <span class="n">lid</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="c1"># this is a new source</span>
+            <span class="n">lid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_source_id</span>
+            <span class="n">gid</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">lid</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">BASESOURCEID</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">BASESOURCEID</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+        <span class="c1"># add source to database</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;INSERT INTO Source (id, source, state) VALUES (?, ?, ?);&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="p">(</span><span class="n">gid</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">state</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="Database.load_daylight_factor_results"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.load_daylight_factor_results">[docs]</a>    <span class="k">def</span> <span class="nf">load_daylight_factor_results</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">divide_by</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+                                     <span class="n">source_mapping</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Load daylight factor results.&quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filepath</span><span class="p">),</span> \
+            <span class="s1">&#39;Cannot find </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+        <span class="n">table_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_result_tables</span><span class="p">(</span><span class="n">get_recipe_id</span><span class="p">(</span><span class="s1">&#39;daylight_factor&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">load_point_in_time_results</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">divide_by</span><span class="p">,</span>
+                                        <span class="n">source_mapping</span><span class="p">,</span> <span class="n">integer</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Database.load_point_in_time_illuminance_results"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.load_point_in_time_illuminance_results">[docs]</a>    <span class="k">def</span> <span class="nf">load_point_in_time_illuminance_results</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">source_mapping</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Load daylight factor results.&quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filepath</span><span class="p">),</span> \
+            <span class="s1">&#39;Cannot find </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+        <span class="n">divide_by</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">table_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_result_tables</span><span class="p">(</span><span class="n">get_recipe_id</span><span class="p">(</span><span class="s1">&#39;point_in_time&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">load_point_in_time_results</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">divide_by</span><span class="p">,</span>
+                                        <span class="n">source_mapping</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Database.load_point_in_time_results"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.load_point_in_time_results">[docs]</a>    <span class="k">def</span> <span class="nf">load_point_in_time_results</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">divide_by</span><span class="p">,</span>
+                                   <span class="n">source_mapping</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">integer</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Generic method to load results from a result file.&quot;&quot;&quot;</span>
+        <span class="n">command</span> <span class="o">=</span> \
+            <span class="sd">&quot;&quot;&quot;INSERT INTO %s</span>
+<span class="sd">            (sensor_id, grid_id, source_id, value)</span>
+<span class="sd">            VALUES (?, ?, ?, ?)&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">table_name</span>
+
+        <span class="n">num_type</span> <span class="o">=</span> <span class="nb">int</span> <span class="k">if</span> <span class="n">integer</span> <span class="k">else</span> <span class="nb">float</span>
+        <span class="n">ptc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">point_count</span>
+
+        <span class="c1"># for now there will be only sky source</span>
+        <span class="n">source_id</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">db</span> <span class="o">=</span> <span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">,</span> <span class="n">isolation_level</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="c1"># Set journal mode to WAL.</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA page_size = 4096;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA cache_size=10000;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA locking_mode=EXCLUSIVE;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA synchronous=OFF;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=WAL;&#39;</span><span class="p">)</span>
+
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;PRAGMA busy_timeout = 60000&quot;</span><span class="p">)</span>
+
+        <span class="c1"># insert results from files into database</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;BEGIN&#39;</span><span class="p">)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span> <span class="k">as</span> <span class="n">inf</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">grid_id</span><span class="p">,</span> <span class="n">pt_count</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ptc</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">sensor_id</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pt_count</span><span class="p">):</span>
+                        <span class="n">value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">inf</span><span class="p">))</span> <span class="o">/</span> <span class="n">divide_by</span>
+                        <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">sensor_id</span><span class="p">,</span> <span class="n">grid_id</span><span class="p">,</span> <span class="n">source_id</span><span class="p">,</span> <span class="n">num_type</span><span class="p">(</span><span class="n">value</span><span class="p">)))</span>
+                        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">%</span> <span class="mi">250</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+                            <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="c1"># the remainder of the list</span>
+                <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">e</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;COMMIT&#39;</span><span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=DELETE;&#39;</span><span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.load_solaraccess_results"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.load_solaraccess_results">[docs]</a>    <span class="k">def</span> <span class="nf">load_solaraccess_results</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">moys</span><span class="p">,</span> <span class="n">source_mapping</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filepath</span><span class="p">),</span> \
+            <span class="s1">&#39;Cannot find </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+
+        <span class="n">table_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_result_tables</span><span class="p">(</span><span class="n">get_recipe_id</span><span class="p">(</span><span class="s1">&#39;solar_access&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">command</span> <span class="o">=</span> \
+            <span class="sd">&quot;&quot;&quot;INSERT INTO %s</span>
+<span class="sd">            (sensor_id, grid_id, source_id, moy, value)</span>
+<span class="sd">            VALUES (?, ?, ?, ?, ?)&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">table_name</span>
+
+        <span class="n">ptc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">point_count</span>
+
+        <span class="c1"># for now there will be only sky source</span>
+        <span class="n">source_id</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">db</span> <span class="o">=</span> <span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">,</span> <span class="n">isolation_level</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="c1"># Set journal mode to WAL.</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA page_size = 4096;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA cache_size=10000;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA locking_mode=EXCLUSIVE;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA synchronous=OFF;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=WAL;&#39;</span><span class="p">)</span>
+
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;PRAGMA busy_timeout = 60000&quot;</span><span class="p">)</span>
+
+        <span class="c1"># insert results from files into database</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;BEGIN&#39;</span><span class="p">)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span> <span class="k">as</span> <span class="n">inf</span><span class="p">:</span>
+                <span class="c1"># remove header</span>
+                <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">inf</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;FORMAT=&#39;</span><span class="p">):</span>
+                        <span class="nb">next</span><span class="p">(</span><span class="n">inf</span><span class="p">)</span>  <span class="c1"># empty line</span>
+                        <span class="k">break</span>
+                    <span class="k">elif</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;NCOLS=&#39;</span><span class="p">):</span>
+                        <span class="n">ncols</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+                <span class="c1"># ensure number of columns matches number of hours</span>
+                <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">moys</span><span class="p">)</span> <span class="o">==</span> <span class="n">ncols</span><span class="p">,</span> \
+                    <span class="s1">&#39;Number of columns (</span><span class="si">%d</span><span class="s1">) is different from number of moys (</span><span class="si">%d</span><span class="s1">).&#39;</span> <span class="o">%</span> \
+                    <span class="p">(</span><span class="n">ncols</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">moys</span><span class="p">))</span>
+
+                <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="k">for</span> <span class="n">grid_id</span><span class="p">,</span> <span class="n">pt_count</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ptc</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">sensor_id</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pt_count</span><span class="p">):</span>
+                        <span class="n">tl</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">inf</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">count</span><span class="p">,</span> <span class="n">tv</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)):</span>
+                            <span class="k">if</span> <span class="n">count</span> <span class="o">==</span> <span class="n">ncols</span><span class="p">:</span>
+                                <span class="c1"># this is last tab in resulst.</span>
+                                <span class="k">continue</span>
+                            <span class="n">moy</span> <span class="o">=</span> <span class="n">moys</span><span class="p">[</span><span class="n">count</span><span class="p">]</span>
+                            <span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">tv</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span>
+                            <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">sensor_id</span><span class="p">,</span> <span class="n">grid_id</span><span class="p">,</span> <span class="n">source_id</span><span class="p">,</span> <span class="n">moy</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+                            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">%</span> <span class="mi">250</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                                <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+                                <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="c1"># the remainder of the list</span>
+                <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">e</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;COMMIT&#39;</span><span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=DELETE;&#39;</span><span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.load_two_phase_results_from_folder"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.load_two_phase_results_from_folder">[docs]</a>    <span class="k">def</span> <span class="nf">load_two_phase_results_from_folder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">folder</span><span class="p">,</span> <span class="n">moys</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">source_mapping</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Load all the results from daylight coefficient studies.</span>
+
+<span class="sd">        This method loads all the results including sun, direct, total an final</span>
+<span class="sd">        results. For uploading only the final results use</span>
+<span class="sd">        load_final_dc_results_from_folder method.</span>
+
+<span class="sd">        This method looks for files with .ill extensions. The file should be named as</span>
+<span class="sd">        &lt;data-type&gt;..&lt;window-group-name&gt;..&lt;state-name&gt;.ill for instance</span>
+<span class="sd">        total..north_facing..default.ill includes the &#39;total&#39; values from &#39;north_facing&#39;</span>
+<span class="sd">        window group at &#39;default&#39; state.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            folder: Path to result folder.</span>
+<span class="sd">            moys: List of minutes of the year. Default is an hourly annual study.</span>
+<span class="sd">            source_mapping: A dictionary that includes sources and their states. Keys</span>
+<span class="sd">                are source names and values are list of states. If source_mapping is not</span>
+<span class="sd">                provided this method will sort the states based on name.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># assume it&#39;s an annual study</span>
+        <span class="n">moys</span> <span class="o">=</span> <span class="n">moys</span> <span class="ow">or</span> <span class="p">[</span><span class="mi">60</span> <span class="o">*</span> <span class="n">h</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">8760</span><span class="p">)]</span>
+
+        <span class="c1"># collect files</span>
+        <span class="n">result_files</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;sun&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;direct&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;total&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;final&#39;</span><span class="p">:</span> <span class="p">[]}</span>
+
+        <span class="k">for</span> <span class="n">fi</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">fi</span><span class="p">)):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">fi</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.ill&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;direct..&#39;</span><span class="p">):</span>
+                <span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;direct&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fi</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;sun..&#39;</span><span class="p">):</span>
+                <span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;sun&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fi</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;total..&#39;</span><span class="p">):</span>
+                <span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fi</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;diffuse..&#39;</span><span class="p">):</span>
+                <span class="k">assert</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+                    <span class="s1">&#39;This method currently does not support radiation studies.&#39;</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;final&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fi</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;sun&#39;</span><span class="p">])</span> <span class="o">+</span> \
+                <span class="nb">len</span><span class="p">(</span><span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;final&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;No result file was found in </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">folder</span><span class="p">))</span>
+
+        <span class="c1"># find window groups and number of states for each</span>
+        <span class="k">if</span> <span class="n">source_mapping</span><span class="p">:</span>
+            <span class="n">sources</span> <span class="o">=</span> <span class="n">source_mapping</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">sources</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_sources_from_files</span><span class="p">(</span><span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">])</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_add_new_sources</span><span class="p">(</span><span class="n">sources</span><span class="p">)</span>
+
+        <span class="n">total_sky_table_name</span><span class="p">,</span> <span class="n">direct_sky_table_name</span><span class="p">,</span> <span class="n">sun_table_name</span><span class="p">,</span> <span class="n">table_name</span> <span class="o">=</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">add_result_tables</span><span class="p">(</span><span class="n">get_recipe_id</span><span class="p">(</span><span class="s1">&#39;two_phase&#39;</span><span class="p">))</span>
+
+        <span class="n">total_sky_column_name</span><span class="p">,</span> <span class="n">direct_sky_column_name</span><span class="p">,</span> <span class="n">sun_column_name</span> <span class="o">=</span> \
+            <span class="p">(</span><span class="s1">&#39;sky_total&#39;</span><span class="p">,</span> <span class="s1">&#39;sky_direct&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        <span class="c1"># for each source and state upload the results</span>
+        <span class="k">for</span> <span class="n">tf</span> <span class="ow">in</span> <span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]:</span>
+            <span class="n">_</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">state</span> <span class="o">=</span> <span class="n">tf</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loading results from </span><span class="si">{}</span><span class="s1">..</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">))</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;total..&#39;</span><span class="p">,</span> <span class="s1">&#39;direct..&#39;</span><span class="p">)</span>
+            <span class="n">sf</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;total..&#39;</span><span class="p">,</span> <span class="s1">&#39;sun..&#39;</span><span class="p">)</span>
+            <span class="c1"># load total sky values</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Loading results for sky total&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">load_dc_result_from_file</span><span class="p">(</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">tf</span><span class="p">),</span> <span class="n">total_sky_table_name</span><span class="p">,</span> <span class="n">total_sky_column_name</span><span class="p">,</span>
+                <span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">moys</span>
+            <span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Loading results for sky direct&#39;</span><span class="p">)</span>
+            <span class="c1"># load direct sky</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">load_dc_result_from_file</span><span class="p">(</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">df</span><span class="p">),</span> <span class="n">direct_sky_table_name</span><span class="p">,</span> <span class="n">direct_sky_column_name</span><span class="p">,</span>
+                <span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">moys</span>
+            <span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Loading results for sun&#39;</span><span class="p">)</span>
+            <span class="c1"># load sun</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">load_dc_result_from_file</span><span class="p">(</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">sf</span><span class="p">),</span> <span class="n">sun_table_name</span><span class="p">,</span> <span class="n">sun_column_name</span><span class="p">,</span>
+                <span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">moys</span>
+            <span class="p">)</span>
+
+        <span class="c1"># calculate final value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_calculate_final_dc_result</span><span class="p">(</span><span class="s1">&#39;two_phase&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Database.load_two_phase_results_final_sun_from_folder"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.load_two_phase_results_final_sun_from_folder">[docs]</a>    <span class="k">def</span> <span class="nf">load_two_phase_results_final_sun_from_folder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">folder</span><span class="p">,</span> <span class="n">moys</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                                                     <span class="n">source_mapping</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Load final and sun results from folder.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            folder: Path to result folder.</span>
+<span class="sd">            moys: List of minutes of the year. Default is an hourly annual study.</span>
+<span class="sd">            source_mapping: A dictionary that includes sources and their states. Keys</span>
+<span class="sd">                are source names and values are list of states. If source_mapping is not</span>
+<span class="sd">                provided this method will sort the states based on name.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># assume it&#39;s an annual study</span>
+        <span class="n">moys</span> <span class="o">=</span> <span class="n">moys</span> <span class="ow">or</span> <span class="p">[</span><span class="mi">60</span> <span class="o">*</span> <span class="n">h</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">8760</span><span class="p">)]</span>
+
+        <span class="c1"># collect files</span>
+        <span class="n">result_files</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;sun&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;final&#39;</span><span class="p">:</span> <span class="p">[]}</span>
+
+        <span class="k">for</span> <span class="n">fi</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">fi</span><span class="p">)):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">fi</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.ill&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;direct..&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">elif</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;sun..&#39;</span><span class="p">):</span>
+                <span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;sun&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fi</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;total..&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">elif</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;diffuse..&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">elif</span> <span class="s1">&#39;..&#39;</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+                <span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;final&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fi</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;sun&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;final&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;No result file was found in </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">folder</span><span class="p">))</span>
+
+        <span class="c1"># find window groups and number of states for each</span>
+        <span class="k">if</span> <span class="n">source_mapping</span><span class="p">:</span>
+            <span class="n">sources</span> <span class="o">=</span> <span class="n">source_mapping</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">sources</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_sources_from_files</span><span class="p">(</span><span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;final&#39;</span><span class="p">])</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_add_new_sources</span><span class="p">(</span><span class="n">sources</span><span class="p">)</span>
+
+        <span class="n">total_sky_table_name</span><span class="p">,</span> <span class="n">direct_sky_table_name</span><span class="p">,</span> <span class="n">sun_table_name</span><span class="p">,</span> <span class="n">table_name</span> <span class="o">=</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">add_result_tables</span><span class="p">(</span><span class="n">get_recipe_id</span><span class="p">(</span><span class="s1">&#39;two_phase&#39;</span><span class="p">))</span>
+
+        <span class="n">column_name</span> <span class="o">=</span> <span class="s1">&#39;value&#39;</span>
+
+        <span class="c1"># for each source and state upload the results</span>
+        <span class="k">for</span> <span class="n">tf</span> <span class="ow">in</span> <span class="n">result_files</span><span class="p">[</span><span class="s1">&#39;final&#39;</span><span class="p">]:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">_</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">state</span> <span class="o">=</span> <span class="n">tf</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="n">source</span><span class="p">,</span> <span class="n">state</span> <span class="o">=</span> <span class="n">tf</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loading results from </span><span class="si">{}</span><span class="s1">..</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">))</span>
+            <span class="n">sf</span> <span class="o">=</span> <span class="s1">&#39;sun..&#39;</span> <span class="o">+</span> <span class="n">tf</span>
+
+            <span class="c1"># load total sky values</span>
+            <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Loading total results&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">load_dc_result_from_file</span><span class="p">(</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">tf</span><span class="p">),</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">column_name</span><span class="p">,</span>
+                <span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">moys</span>
+            <span class="p">)</span>
+            <span class="n">took</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Finished in </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">took</span><span class="p">))))</span>
+            <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Loading direct sun results&#39;</span><span class="p">)</span>
+            <span class="c1"># load sun</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">load_dc_result_from_file</span><span class="p">(</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">sf</span><span class="p">),</span> <span class="n">sun_table_name</span><span class="p">,</span> <span class="n">column_name</span><span class="p">,</span>
+                <span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">moys</span>
+            <span class="p">)</span>
+            <span class="n">took</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Finished in </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">took</span><span class="p">))))</span></div>
+
+<div class="viewcode-block" id="Database.load_two_phase_results_final_from_folder"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.load_two_phase_results_final_from_folder">[docs]</a>    <span class="k">def</span> <span class="nf">load_two_phase_results_final_from_folder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">folder</span><span class="p">,</span> <span class="n">moys</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                                                 <span class="n">source_mapping</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Load only final results from daylight coefficient studies.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            folder: Path to result folder.</span>
+<span class="sd">            moys: List of minutes of the year. Default is an hourly annual study.</span>
+<span class="sd">            source_mapping: A dictionary that includes sources and their states. Keys</span>
+<span class="sd">                are source names and values are list of states. If source_mapping is not</span>
+<span class="sd">                provided this method will sort the states based on name.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># assume it&#39;s an annual study</span>
+        <span class="n">moys</span> <span class="o">=</span> <span class="n">moys</span> <span class="ow">or</span> <span class="p">[</span><span class="mi">60</span> <span class="o">*</span> <span class="n">h</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">8760</span><span class="p">)]</span>
+
+        <span class="c1"># collect files</span>
+        <span class="n">result_files</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">fi</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">fi</span><span class="p">)):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">fi</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.ill&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;direct..&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">elif</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;sun..&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">elif</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;total..&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">elif</span> <span class="n">fi</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;diffuse..&#39;</span><span class="p">):</span>
+                <span class="k">assert</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+                    <span class="s1">&#39;This method currently does not support radiation studies.&#39;</span>
+                <span class="p">)</span>
+            <span class="k">elif</span> <span class="s1">&#39;..&#39;</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+                <span class="n">result_files</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fi</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">result_files</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;No result file was found in </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">folder</span><span class="p">))</span>
+
+        <span class="c1"># find window groups and number of states for each</span>
+        <span class="k">if</span> <span class="n">source_mapping</span><span class="p">:</span>
+            <span class="n">sources</span> <span class="o">=</span> <span class="n">source_mapping</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">sources</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_sources_from_files</span><span class="p">(</span><span class="n">result_files</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_add_new_sources</span><span class="p">(</span><span class="n">sources</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_result_tables</span><span class="p">(</span><span class="n">get_recipe_id</span><span class="p">(</span><span class="s1">&#39;two_phase&#39;</span><span class="p">))</span>
+
+        <span class="n">table_name</span> <span class="o">=</span> <span class="s1">&#39;two_phase&#39;</span>
+        <span class="n">column_name</span> <span class="o">=</span> <span class="s1">&#39;value&#39;</span>
+
+        <span class="c1"># for each source and state upload the results</span>
+        <span class="k">for</span> <span class="n">tf</span> <span class="ow">in</span> <span class="n">result_files</span><span class="p">:</span>
+            <span class="n">source</span><span class="p">,</span> <span class="n">state</span> <span class="o">=</span> <span class="n">tf</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loading results from </span><span class="si">{}</span><span class="s1">..</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">load_dc_result_from_file</span><span class="p">(</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">tf</span><span class="p">),</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">column_name</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">moys</span><span class="p">,</span>
+                <span class="n">header</span>
+            <span class="p">)</span></div>
+
+<div class="viewcode-block" id="Database.load_dc_result_from_file"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.load_dc_result_from_file">[docs]</a>    <span class="k">def</span> <span class="nf">load_dc_result_from_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">column_name</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span>
+                                 <span class="n">source</span><span class="o">=</span><span class="s1">&#39;sky&#39;</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">moys</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Load Radiance results file to database.</span>
+
+<span class="sd">        The script assumes that each row represents an analysis point and number of</span>
+<span class="sd">        coulmns is the number of timesteps.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            res_type: 0 &gt; sky_total, 1 &gt; sky_direct, 2 &gt; sun, 3 &gt; final result</span>
+<span class="sd">            mode: 0 for &quot;Insert&quot; and 1 is for &quot;Update&quot;. Use 0 only the first time after</span>
+<span class="sd">                creating the table.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filepath</span><span class="p">),</span> \
+            <span class="s1">&#39;Cannot find </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+
+        <span class="n">command</span> <span class="o">=</span> \
+            <span class="sd">&quot;&quot;&quot;INSERT INTO %s</span>
+<span class="sd">            (sensor_id, grid_id, source_id, moy, %s)</span>
+<span class="sd">            VALUES (?, ?, ?, ?, ?)&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">table_name</span><span class="p">,</span> <span class="n">column_name</span><span class="p">)</span>
+
+        <span class="n">ptc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">point_count</span>
+        <span class="n">moys</span> <span class="o">=</span> <span class="n">moys</span> <span class="ow">or</span> <span class="p">[</span><span class="mi">60</span> <span class="o">*</span> <span class="n">h</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">8760</span><span class="p">)]</span>
+
+        <span class="n">total_rows</span> <span class="o">=</span> <span class="n">ptc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">moys</span><span class="p">)</span>
+        <span class="c1"># for now there will be only sky source</span>
+        <span class="n">source_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">source_id</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+
+        <span class="n">db</span> <span class="o">=</span> <span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">,</span> <span class="n">isolation_level</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="c1"># Set journal mode to WAL.</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA page_size = 4096;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA cache_size=10000;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA locking_mode=EXCLUSIVE;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA synchronous=OFF;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=WAL;&#39;</span><span class="p">)</span>
+
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;PRAGMA busy_timeout = 60000&quot;</span><span class="p">)</span>
+
+        <span class="c1"># insert results from files into database</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;BEGIN&#39;</span><span class="p">)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span> <span class="k">as</span> <span class="n">inf</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">header</span><span class="p">:</span>
+                    <span class="c1"># remove header</span>
+                    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">inf</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;FORMAT=&#39;</span><span class="p">):</span>
+                            <span class="nb">next</span><span class="p">(</span><span class="n">inf</span><span class="p">)</span>  <span class="c1"># empty line</span>
+                            <span class="k">break</span>
+                        <span class="k">elif</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;NCOLS=&#39;</span><span class="p">):</span>
+                            <span class="n">ncols</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+                    <span class="c1"># ensure number of columns matches number of hours</span>
+                    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">moys</span><span class="p">)</span> <span class="o">==</span> <span class="n">ncols</span><span class="p">,</span> \
+                        <span class="s1">&#39;Number of columns (</span><span class="si">%d</span><span class="s1">) is different from number of moys (</span><span class="si">%d</span><span class="s1">).&#39;</span> \
+                        <span class="o">%</span> <span class="p">(</span><span class="n">ncols</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">moys</span><span class="p">))</span>
+
+                <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">pr_count</span> <span class="o">=</span> <span class="mi">1000000</span>
+                <span class="k">for</span> <span class="n">grid_id</span><span class="p">,</span> <span class="n">pt_count</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ptc</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">sensor_id</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pt_count</span><span class="p">):</span>
+                        <span class="n">tl</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">inf</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">count</span><span class="p">,</span> <span class="n">tv</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)):</span>
+                            <span class="k">try</span><span class="p">:</span>
+                                <span class="n">moy</span> <span class="o">=</span> <span class="n">moys</span><span class="p">[</span><span class="n">count</span><span class="p">]</span>
+                            <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+                                <span class="c1"># extra tab at the end of the file.</span>
+                                <span class="k">continue</span>
+                            <span class="n">value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">tv</span><span class="p">))</span>
+                            <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">sensor_id</span><span class="p">,</span> <span class="n">grid_id</span><span class="p">,</span> <span class="n">source_id</span><span class="p">,</span> <span class="n">moy</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+
+                            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">%</span> <span class="n">pr_count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                                <span class="nb">print</span><span class="p">(</span>
+                                    <span class="s1">&#39;writing </span><span class="si">{}</span><span class="s1">-</span><span class="si">{}</span><span class="s1"> of </span><span class="si">{}</span><span class="s1"> (%</span><span class="si">{:.2f}</span><span class="s1">).&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                                        <span class="n">n</span> <span class="o">*</span> <span class="n">pr_count</span><span class="p">,</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">pr_count</span><span class="p">,</span> <span class="n">total_rows</span><span class="p">,</span>
+                                        <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">pr_count</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">/</span> <span class="n">total_rows</span>
+                                    <span class="p">))</span>
+                                <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+                                <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+                                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;...&#39;</span><span class="p">)</span>
+                                <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="c1"># the remainder of the list</span>
+                <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">e</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;COMMIT&#39;</span><span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=DELETE;&#39;</span><span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="nf">_calculate_final_dc_result</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">recipe_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;SkyTotalValue - SkyDirectValue + Sun &gt; Total&quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Calculating final result: total - direct + sun&#39;</span><span class="p">)</span>
+        <span class="n">db</span> <span class="o">=</span> <span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">,</span> <span class="n">isolation_level</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="c1"># Set journal mode to WAL.</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA page_size = 4096;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA cache_size=10000;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA locking_mode=EXCLUSIVE;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA synchronous=OFF;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=WAL;&#39;</span><span class="p">)</span>
+
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;PRAGMA busy_timeout = 60000&quot;</span><span class="p">)</span>
+
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;INSERT INTO </span><span class="si">{0}</span><span class="s2"></span>
+<span class="s2">        SELECT sensor_id, grid_id, source_id, moy,</span>
+<span class="s2">        </span><span class="si">{0}</span><span class="s2">_sky_total.sky_total - </span><span class="si">{0}</span><span class="s2">_sky_direct.sky_direct</span>
+<span class="s2">        + </span><span class="si">{0}</span><span class="s2">_sun.value as value</span>
+
+<span class="s2">        FROM </span><span class="si">{0}</span><span class="s2">_sky_direct</span>
+<span class="s2">        Natural JOIN </span><span class="si">{0}</span><span class="s2">_sky_total</span>
+<span class="s2">        Natural JOIN </span><span class="si">{0}</span><span class="s2">_sun;&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">recipe_name</span><span class="p">)</span>
+
+        <span class="c1"># insert results from files into database</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;BEGIN&#39;</span><span class="p">)</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">e</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;COMMIT&#39;</span><span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=DELETE;&#39;</span><span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<div class="viewcode-block" id="Database.load_matrix_form_file"><a class="viewcode-back" href="../../../../honeybee.radiance.resultcollection.database.html#honeybee.radiance.resultcollection.database.Database.load_matrix_form_file">[docs]</a>    <span class="k">def</span> <span class="nf">load_matrix_form_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mtx_file</span><span class="p">,</span> <span class="n">table_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Load Radiance matrix file to database.</span>
+
+<span class="sd">        The script assumes that each row represents an analysis point and number of</span>
+<span class="sd">        coulmns is the number of sky patches.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">dc_command</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS </span><span class="si">%s</span><span class="s2"> (</span>
+<span class="s2">        point_id INT,</span>
+<span class="s2">        patch_id INT,</span>
+<span class="s2">        value Number,</span>
+<span class="s2">        PRIMARY KEY(point_id, patch_id)</span>
+<span class="s2">        );&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">table_name</span>
+
+        <span class="n">mtx_insert_command</span> <span class="o">=</span> \
+            <span class="sd">&quot;&quot;&quot;INSERT INTO %s (point_id, patch_id, value) VALUES (?, ?, ?);&quot;&quot;&quot;</span> \
+            <span class="o">%</span> <span class="n">table_name</span>
+
+        <span class="n">db</span> <span class="o">=</span> <span class="n">lite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">db_filepath</span><span class="p">,</span> <span class="n">isolation_level</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="c1"># Set journal mode to WAL.</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA page_size = 4096;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA cache_size=10000;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA locking_mode=EXCLUSIVE;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA synchronous=OFF;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=WAL;&#39;</span><span class="p">)</span>
+
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;PRAGMA busy_timeout = 60000&quot;</span><span class="p">)</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">dc_command</span><span class="p">)</span>
+
+        <span class="c1"># insert results from files into database</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;BEGIN&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mtx_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">inf</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">inf</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;FORMAT=&#39;</span><span class="p">):</span>
+                    <span class="nb">next</span><span class="p">(</span><span class="n">inf</span><span class="p">)</span>  <span class="c1"># empty line</span>
+                    <span class="k">break</span>
+                <span class="k">elif</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;NCOMP=&#39;</span><span class="p">):</span>
+                    <span class="n">ncomp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+                <span class="k">elif</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;NCOLS=&#39;</span><span class="p">):</span>
+                    <span class="n">ncols</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+            <span class="k">for</span> <span class="n">row_num</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">inf</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">count</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)):</span>
+                    <span class="k">if</span> <span class="n">count</span> <span class="o">%</span> <span class="n">ncomp</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                        <span class="n">col_num</span> <span class="o">=</span> <span class="n">count</span> <span class="o">/</span> <span class="n">ncomp</span>
+                        <span class="k">if</span> <span class="n">col_num</span> <span class="o">==</span> <span class="n">ncols</span><span class="p">:</span>
+                            <span class="c1"># this is last tab in resulst.</span>
+                            <span class="k">continue</span>
+                        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">mtx_insert_command</span><span class="p">,</span> <span class="p">(</span><span class="n">row_num</span><span class="p">,</span> <span class="n">col_num</span><span class="p">,</span>
+                                                            <span class="n">value</span><span class="p">))</span>
+
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;COMMIT&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;PRAGMA journal_mode=DELETE;&#39;</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

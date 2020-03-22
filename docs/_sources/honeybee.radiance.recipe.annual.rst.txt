@@ -1,0 +1,17 @@
+honeybee.radiance.recipe.annual package
+=======================================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.recipe.annual.gridbased
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.recipe.annual
+    :members:
+    :undoc-members:
+    :show-inheritance:

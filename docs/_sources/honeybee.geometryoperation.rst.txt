@@ -1,0 +1,7 @@
+honeybee.geometryoperation module
+=================================
+
+.. automodule:: honeybee.geometryoperation
+    :members:
+    :undoc-members:
+    :show-inheritance:

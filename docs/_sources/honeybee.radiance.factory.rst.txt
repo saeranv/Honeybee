@@ -1,0 +1,7 @@
+honeybee.radiance.factory module
+================================
+
+.. automodule:: honeybee.radiance.factory
+    :members:
+    :undoc-members:
+    :show-inheritance:

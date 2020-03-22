@@ -1,0 +1,7 @@
+honeybee.futil module
+=====================
+
+.. automodule:: honeybee.futil
+    :members:
+    :undoc-members:
+    :show-inheritance:

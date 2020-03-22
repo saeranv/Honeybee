@@ -1,0 +1,7 @@
+honeybee.radiance.material.plasfunc module
+==========================================
+
+.. automodule:: honeybee.radiance.material.plasfunc
+    :members:
+    :undoc-members:
+    :show-inheritance:

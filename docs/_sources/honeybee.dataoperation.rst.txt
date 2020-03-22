@@ -1,0 +1,7 @@
+honeybee.dataoperation module
+=============================
+
+.. automodule:: honeybee.dataoperation
+    :members:
+    :undoc-members:
+    :show-inheritance:

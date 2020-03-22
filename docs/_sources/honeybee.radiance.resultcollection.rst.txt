@@ -1,0 +1,21 @@
+honeybee.radiance.resultcollection package
+==========================================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.resultcollection.database
+   honeybee.radiance.resultcollection.imagecollection
+   honeybee.radiance.resultcollection.pointintime
+   honeybee.radiance.resultcollection.resultgrid
+   honeybee.radiance.resultcollection.timeseries
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.resultcollection
+    :members:
+    :undoc-members:
+    :show-inheritance:

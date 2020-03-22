@@ -1,0 +1,7 @@
+honeybee.radiance.command.genskyvec module
+==========================================
+
+.. automodule:: honeybee.radiance.command.genskyvec
+    :members:
+    :undoc-members:
+    :show-inheritance:

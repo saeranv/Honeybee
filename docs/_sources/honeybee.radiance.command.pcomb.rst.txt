@@ -1,0 +1,7 @@
+honeybee.radiance.command.pcomb module
+======================================
+
+.. automodule:: honeybee.radiance.command.pcomb
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+honeybee.vectormath.euclid module
+=================================
+
+.. automodule:: honeybee.vectormath.euclid
+    :members:
+    :undoc-members:
+    :show-inheritance:

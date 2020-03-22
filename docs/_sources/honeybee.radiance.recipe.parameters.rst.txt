@@ -1,0 +1,7 @@
+honeybee.radiance.recipe.parameters module
+==========================================
+
+.. automodule:: honeybee.radiance.recipe.parameters
+    :members:
+    :undoc-members:
+    :show-inheritance:

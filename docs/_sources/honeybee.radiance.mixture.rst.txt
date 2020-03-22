@@ -1,0 +1,21 @@
+honeybee.radiance.mixture package
+=================================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.mixture.mixdata
+   honeybee.radiance.mixture.mixfunc
+   honeybee.radiance.mixture.mixpict
+   honeybee.radiance.mixture.mixtext
+   honeybee.radiance.mixture.mixturebase
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.mixture
+    :members:
+    :undoc-members:
+    :show-inheritance:

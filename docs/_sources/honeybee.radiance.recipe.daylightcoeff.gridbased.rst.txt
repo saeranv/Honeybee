@@ -1,0 +1,7 @@
+honeybee.radiance.recipe.daylightcoeff.gridbased module
+=======================================================
+
+.. automodule:: honeybee.radiance.recipe.daylightcoeff.gridbased
+    :members:
+    :undoc-members:
+    :show-inheritance:

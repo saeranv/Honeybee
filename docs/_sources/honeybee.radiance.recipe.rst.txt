@@ -1,0 +1,36 @@
+honeybee.radiance.recipe package
+================================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    honeybee.radiance.recipe.annual
+    honeybee.radiance.recipe.daylightcoeff
+    honeybee.radiance.recipe.daylightfactor
+    honeybee.radiance.recipe.directreflection
+    honeybee.radiance.recipe.fivephase
+    honeybee.radiance.recipe.pointintime
+    honeybee.radiance.recipe.radiation
+    honeybee.radiance.recipe.solaraccess
+    honeybee.radiance.recipe.threephase
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.recipe.id
+   honeybee.radiance.recipe.parameters
+   honeybee.radiance.recipe.recipedcutil
+   honeybee.radiance.recipe.recipeutil
+   honeybee.radiance.recipe.recipexphaseutil
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.recipe
+    :members:
+    :undoc-members:
+    :show-inheritance:

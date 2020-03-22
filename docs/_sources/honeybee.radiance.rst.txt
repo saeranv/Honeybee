@@ -1,0 +1,45 @@
+honeybee.radiance package
+=========================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    honeybee.radiance.command
+    honeybee.radiance.geometry
+    honeybee.radiance.material
+    honeybee.radiance.mixture
+    honeybee.radiance.parameters
+    honeybee.radiance.pattern
+    honeybee.radiance.recipe
+    honeybee.radiance.resultcollection
+    honeybee.radiance.sky
+    honeybee.radiance.texture
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.analysisgrid
+   honeybee.radiance.analysisgridlite
+   honeybee.radiance.analysispoint
+   honeybee.radiance.analysispointlite
+   honeybee.radiance.datatype
+   honeybee.radiance.factory
+   honeybee.radiance.primitive
+   honeybee.radiance.properties
+   honeybee.radiance.radfile
+   honeybee.radiance.radparser
+   honeybee.radiance.scene
+   honeybee.radiance.staticscene
+   honeybee.radiance.view
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+honeybee.radiance.recipe.pointintime.gridbased module
+=====================================================
+
+.. automodule:: honeybee.radiance.recipe.pointintime.gridbased
+    :members:
+    :undoc-members:
+    :show-inheritance:

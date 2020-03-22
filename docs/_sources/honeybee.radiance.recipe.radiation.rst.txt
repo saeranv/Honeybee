@@ -1,0 +1,17 @@
+honeybee.radiance.recipe.radiation package
+==========================================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.recipe.radiation.gridbased
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.recipe.radiation
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+honeybee.surfacetype module
+===========================
+
+.. automodule:: honeybee.surfacetype
+    :members:
+    :undoc-members:
+    :show-inheritance:

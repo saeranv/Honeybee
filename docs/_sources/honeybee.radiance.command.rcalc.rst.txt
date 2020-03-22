@@ -1,0 +1,7 @@
+honeybee.radiance.command.rcalc module
+======================================
+
+.. automodule:: honeybee.radiance.command.rcalc
+    :members:
+    :undoc-members:
+    :show-inheritance:

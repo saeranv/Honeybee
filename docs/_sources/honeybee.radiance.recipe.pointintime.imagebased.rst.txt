@@ -1,0 +1,7 @@
+honeybee.radiance.recipe.pointintime.imagebased module
+======================================================
+
+.. automodule:: honeybee.radiance.recipe.pointintime.imagebased
+    :members:
+    :undoc-members:
+    :show-inheritance:

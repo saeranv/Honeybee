@@ -1,0 +1,17 @@
+honeybee.radiance.recipe.solaraccess package
+============================================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.recipe.solaraccess.gridbased
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.recipe.solaraccess
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+honeybee.radiance.parameters.vwrays module
+==========================================
+
+.. automodule:: honeybee.radiance.parameters.vwrays
+    :members:
+    :undoc-members:
+    :show-inheritance:

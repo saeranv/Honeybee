@@ -1,0 +1,7 @@
+honeybee.radiance.material.trans module
+=======================================
+
+.. automodule:: honeybee.radiance.material.trans
+    :members:
+    :undoc-members:
+    :show-inheritance:

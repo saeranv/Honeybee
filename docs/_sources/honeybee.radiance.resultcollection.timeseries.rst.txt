@@ -1,0 +1,7 @@
+honeybee.radiance.resultcollection.timeseries module
+====================================================
+
+.. automodule:: honeybee.radiance.resultcollection.timeseries
+    :members:
+    :undoc-members:
+    :show-inheritance:

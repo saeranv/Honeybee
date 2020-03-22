@@ -1,0 +1,7 @@
+honeybee.radiance.parameters.mkpmap module
+==========================================
+
+.. automodule:: honeybee.radiance.parameters.mkpmap
+    :members:
+    :undoc-members:
+    :show-inheritance:

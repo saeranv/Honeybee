@@ -1,0 +1,7 @@
+honeybee.radiance.sky.analemma module
+=====================================
+
+.. automodule:: honeybee.radiance.sky.analemma
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+honeybee.radiance.command.gendaylit module
+==========================================
+
+.. automodule:: honeybee.radiance.command.gendaylit
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+honeybee.energyplus.geometryrules module
+========================================
+
+.. automodule:: honeybee.energyplus.geometryrules
+    :members:
+    :undoc-members:
+    :show-inheritance:

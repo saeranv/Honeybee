@@ -1,0 +1,7 @@
+honeybee.utilcol module
+=======================
+
+.. automodule:: honeybee.utilcol
+    :members:
+    :undoc-members:
+    :show-inheritance:

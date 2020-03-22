@@ -1,0 +1,18 @@
+honeybee.radiance.recipe.pointintime package
+============================================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.recipe.pointintime.gridbased
+   honeybee.radiance.recipe.pointintime.imagebased
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.recipe.pointintime
+    :members:
+    :undoc-members:
+    :show-inheritance:

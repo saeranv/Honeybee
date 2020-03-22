@@ -1,0 +1,17 @@
+honeybee.radiance.recipe.fivephase package
+==========================================
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.recipe.fivephase.gridbased
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.recipe.fivephase
+    :members:
+    :undoc-members:
+    :show-inheritance:

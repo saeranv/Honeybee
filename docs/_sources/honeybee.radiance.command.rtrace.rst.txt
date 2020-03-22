@@ -1,0 +1,7 @@
+honeybee.radiance.command.rtrace module
+=======================================
+
+.. automodule:: honeybee.radiance.command.rtrace
+    :members:
+    :undoc-members:
+    :show-inheritance:

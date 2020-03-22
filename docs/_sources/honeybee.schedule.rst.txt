@@ -1,0 +1,7 @@
+honeybee.schedule module
+========================
+
+.. automodule:: honeybee.schedule
+    :members:
+    :undoc-members:
+    :show-inheritance:

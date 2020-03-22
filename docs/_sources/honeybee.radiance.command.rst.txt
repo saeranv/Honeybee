@@ -1,0 +1,48 @@
+honeybee.radiance.command package
+=================================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    honeybee.radiance.command.pyRad
+
+Submodules
+----------
+
+.. toctree::
+
+   honeybee.radiance.command.dctimestep
+   honeybee.radiance.command.epw2wea
+   honeybee.radiance.command.falsecolor
+   honeybee.radiance.command.genBSDF
+   honeybee.radiance.command.gendaylit
+   honeybee.radiance.command.gendaymtx
+   honeybee.radiance.command.gensky
+   honeybee.radiance.command.genskyvec
+   honeybee.radiance.command.getbbox
+   honeybee.radiance.command.getinfo
+   honeybee.radiance.command.mkpmap
+   honeybee.radiance.command.objview
+   honeybee.radiance.command.oconv
+   honeybee.radiance.command.pcomb
+   honeybee.radiance.command.raBmp
+   honeybee.radiance.command.raTiff
+   honeybee.radiance.command.rcalc
+   honeybee.radiance.command.rcollate
+   honeybee.radiance.command.rcontrib
+   honeybee.radiance.command.rfluxmtx
+   honeybee.radiance.command.rmtxop
+   honeybee.radiance.command.rpict
+   honeybee.radiance.command.rtrace
+   honeybee.radiance.command.vwrays
+   honeybee.radiance.command.xform
+
+Module contents
+---------------
+
+.. automodule:: honeybee.radiance.command
+    :members:
+    :undoc-members:
+    :show-inheritance:

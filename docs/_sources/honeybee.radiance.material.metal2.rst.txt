@@ -1,0 +1,7 @@
+honeybee.radiance.material.metal2 module
+========================================
+
+.. automodule:: honeybee.radiance.material.metal2
+    :members:
+    :undoc-members:
+    :show-inheritance:

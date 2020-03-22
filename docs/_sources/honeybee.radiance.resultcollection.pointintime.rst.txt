@@ -1,0 +1,7 @@
+honeybee.radiance.resultcollection.pointintime module
+=====================================================
+
+.. automodule:: honeybee.radiance.resultcollection.pointintime
+    :members:
+    :undoc-members:
+    :show-inheritance:

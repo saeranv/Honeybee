@@ -1,0 +1,7 @@
+honeybee.radiance.material.metfunc module
+=========================================
+
+.. automodule:: honeybee.radiance.material.metfunc
+    :members:
+    :undoc-members:
+    :show-inheritance:

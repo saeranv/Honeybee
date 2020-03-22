@@ -1,0 +1,7 @@
+honeybee.radiance.geometry.cup module
+=====================================
+
+.. automodule:: honeybee.radiance.geometry.cup
+    :members:
+    :undoc-members:
+    :show-inheritance:

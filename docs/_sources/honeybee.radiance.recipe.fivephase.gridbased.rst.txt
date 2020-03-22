@@ -1,0 +1,7 @@
+honeybee.radiance.recipe.fivephase.gridbased module
+===================================================
+
+.. automodule:: honeybee.radiance.recipe.fivephase.gridbased
+    :members:
+    :undoc-members:
+    :show-inheritance:

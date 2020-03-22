@@ -1,0 +1,7 @@
+honeybee.radiance.radfile module
+================================
+
+.. automodule:: honeybee.radiance.radfile
+    :members:
+    :undoc-members:
+    :show-inheritance:

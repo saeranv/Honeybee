@@ -1,0 +1,7 @@
+honeybee.radiance.recipe.recipexphaseutil module
+================================================
+
+.. automodule:: honeybee.radiance.recipe.recipexphaseutil
+    :members:
+    :undoc-members:
+    :show-inheritance:

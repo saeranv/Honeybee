@@ -1,0 +1,7 @@
+honeybee.radiance.datatype module
+=================================
+
+.. automodule:: honeybee.radiance.datatype
+    :members:
+    :undoc-members:
+    :show-inheritance:
